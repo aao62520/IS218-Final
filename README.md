@@ -7,8 +7,8 @@ Each student should put an 'X' under their name on the days they attend class.
 
 | Date        | Student 1 | Mike Villagomez | Student 3 |
 |-------------|-----------|-----------|-----------|
-| Nov 8 (Wed) |    Ahmad       |    Here  x      |           |
-| Nov 10 (Fri)|           |           |           |
+| Nov 8 (Wed) |    Ahmad  |     X     |           |
+| Nov 10 (Fri)|           |     X     |           |
 | Nov 15 (Wed)|           |           |           |
 | Nov 17 (Fri)|           |           |           |
 | *Nov 22 (Wed)* |       |           |           |  <!-- Skipped for Thanksgiving -->
