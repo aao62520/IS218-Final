@@ -1,4 +1,4 @@
-# Final Business Analysis Submission
+# Final Business Analysis Submission Link
 
 -Link to the sign-in sheet [Here](https://github.com/MikeVillagomez/IS218-Final/blob/main/SIGNIN.md)
 
