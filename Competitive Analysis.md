@@ -1,3 +1,11 @@
+Competitor 1: The Republic of Tea
+
+*Archetype: Sage
+
+* Method of Persuasion: Authority
+
+*Analysis: The Republic of Tea embodies the Sage archetype, positioning itself as a source of wisdom and knowledge about tea. They use the method of persuasion through authority by emphasizing their expertise in tea blending and sourcing. Their commitment to providing high-quality, organic, and sustainably sourced teas demonstrates their authority in the industry. This approach appeals to customers who seek trustworthy and knowledgeable tea brands, leveraging authority to gain credibility and customer trust.
+
 Competitor 2: David's Tea
 
 *Archetype: Caregiver
