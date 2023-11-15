@@ -1,4 +1,4 @@
-Competitor 2: David's Tea
+#Competitor 2: David's Tea
 
 *Archetype: Caregiver
 
