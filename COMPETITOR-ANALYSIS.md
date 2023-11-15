@@ -1,28 +1,8 @@
-# Competitive Analysis
 
-## Competitor 1: The Republic of Tea
+# Comprehensive Competitive Analysis Template
 
-**Archetype**: Sage
-
-**Method of Persuasion**: Authority
-
-**Analysis**:
-The Republic of Tea embodies the Sage archetype, positioning itself as a source of wisdom and knowledge about tea. They use the method of persuasion through authority by emphasizing their expertise in tea blending and sourcing. Their commitment to providing high-quality, organic, and sustainably sourced teas demonstrates their authority in the industry. This approach appeals to customers who seek trustworthy and knowledgeable tea brands, leveraging authority to gain credibility and customer trust.
-
-## Competitor 2: David's Tea
-
-**Archetype**: Caregiver
-
-**Methods of Persuasion**: Commitment and Consistency
-
-**Analysis**:
-David's Tea aligns with the Caregiver archetype, focusing on nurturing and providing comfort through their tea offerings. Their method of persuasion is rooted in commitment and consistency, as seen in their loyalty programs and consistent messaging about health and wellness benefits. This strategy builds a loyal customer base that appreciates the brand's stable and reliable presence in their lives, establishing trust and a sense of community.
-
-## Competitor 3: T2 Tea
-
-**Archetype**: Creator
-
-**Method of Persuasion**: Liking
-
-**Analysis**:
-T2 Tea exemplifies the Creator archetype, emphasizing creativity and innovation in their tea blends and packaging. Their persuasion method hinges on 'liking', with aesthetically pleasing stores and visually appealing packaging. They connect with customers who value artistic expression and uniqueness, using attractive design elements to foster a positive, appealing brand image that customers enjoy and associate with creativity.
+| Competitor          | Archetype    | Method of Persuasion       | Target Market         | Unique Selling Proposition (USP)           | Pricing Strategy       | Market Presence           | Customer Feedback                               | General Analysis                                                                                      |
+|---------------------|--------------|----------------------------|-----------------------|-------------------------------------------|------------------------|--------------------------|-------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| The Republic of Tea | Sage         | Authority                  | Health-conscious consumers | Premium quality, wide variety | Premium pricing        | Strong online and retail | Positive for quality and variety               | The Republic of Tea emphasizes expertise in tea blending and sourcing, appealing to health-conscious consumers. |
+| David's Tea         | Caregiver    | Commitment and Consistency | Younger, trendy consumers  | Unique flavors, wellness focus             | Moderate to high       | Strong online, growing retail | Generally positive, some concerns about changes in flavors | David's Tea focuses on comfort and wellness, with a strong loyalty program and consistent health messaging.      |
+| T2 Tea              | Creator      | Liking                     | Urban, artsy consumers   | Bold packaging, innovative blends          | Premium pricing        | Strong in Australia, growing internationally | Very positive, especially on design            | T2 Tea stands out for its creative and innovative approach, with visually appealing stores and packaging.        |
