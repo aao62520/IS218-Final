@@ -2,7 +2,7 @@ Competitor 2: David's Tea
 
 -Archetype: Caregiver
 
-*-Methods of Persuasion: Commitment and Consistency
+* Methods of Persuasion: Commitment and Consistency
 * Nested bullet
 
 -Analysis: David's Tea aligns with the Caregiver archetype, focusing on nurturing and providing comfort through their tea offerings. Their method of persuasion is rooted in commitment and consistency, as seen in their loyalty programs and consistent messaging about health and wellness benefits. This strategy builds a loyal customer base that appreciates the brand's stable and reliable presence in their lives, establishing trust and a sense of community.
