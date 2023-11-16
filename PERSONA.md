@@ -2,7 +2,7 @@
 
 ## Persona Overview
 
-![Emily Johnson](images/Emily.jpg)
+![Emily Johnson](images/Emily.png)
 
 | Attribute            | Details |
 |----------------------|---------|
