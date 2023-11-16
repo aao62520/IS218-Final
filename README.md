@@ -5,3 +5,7 @@
 -Link to the Competitors Analysis [Here](https://github.com/MikeVillagomez/IS218-Final/blob/main/COMPETITOR-ANALYSIS.md) 
 
 -Link to the SWOT Analysis [Here](https://github.com/MikeVillagomez/IS218-Final/blob/main/SWOT-ANAlYSIS.md)
+
+-Link to the Personal [Here](https://github.com/MikeVillagomez/IS218-Final/blob/main/PERSONA.md)
+
+-Link to the Sales Funnel Stages [Here](https://github.com/MikeVillagomez/IS218-Final/blob/main/SALES-FUNNEL.md)
