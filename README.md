@@ -9,3 +9,5 @@
 -Link to the Personal [Here](https://github.com/MikeVillagomez/IS218-Final/blob/main/PERSONA.md)
 
 -Link to the Sales Funnel Stages [Here](https://github.com/MikeVillagomez/IS218-Final/blob/main/SALES-FUNNEL.md)
+
+-Link to the User Stories [Here](https://github.com/MikeVillagomez/IS218-Final/blob/main/userstories.md)
