@@ -1,3 +1,5 @@
+// pages/index.js
+
 import React from 'react';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
@@ -16,6 +18,15 @@ const Index = ({ products }) => {
   return (
     <>
       <Head>
+        <title>Blend-brew Tea</title>
+        <meta name="description" content="Discover the art of fine tea with Blend-brew Tea. Explore our crafted blends for a symphony of flavors." />
+        <meta name="keywords" content="tea, blendbrew tea, organic tea, herbal tea, green tea, black tea, loose leaf tea, tea blends, specialty tea, artisan tea" />
+        <meta property="og:title" content="Blend-brew Tea" />
+        <meta property="og:description" content="Explore our crafted blends for a symphony of flavors." />
+        <meta property="og:image" content="/path_to_your_image.jpg" /> {/* Replace with your image path */}
+        <meta property="og:type" content="website" />
+        <link rel="icon" href="/teas.webp" /> {/* Replace with your favicon path */}
+        {/* Additional meta tags as needed */}
         <script
           id="mcjs"
           dangerouslySetInnerHTML={{ 
