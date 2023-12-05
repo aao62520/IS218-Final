@@ -1,0 +1,74 @@
+/* styles/SignUpSection.module.css */
+
+.signupSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 1rem; /* Adjust as necessary */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.formWrapper {
+    display: flex; /* Align children horizontally */
+    align-items: center; /* Align children vertically */
+    gap: 10px; /* Adds space between elements */
+    
+}
+
+.signupHeader {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem; /* Adjust font size as needed */
+}
+
+.inputWrapper {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center-align vertically */
+    flex-grow: 1; /* Allow the wrapper to expand */
+}
+
+.inputEmail {
+    background-color: #D9D9D9;
+    width: 100%; /* Use the full width of the wrapper */
+    height: 40px; /* Adjust height as needed */
+    border: 1px solid #007BFF; /* Styling, can be adjusted */
+    padding: 0 10px; /* Padding inside the input */
+    border-radius: 4px;
+    padding-top: 20px;
+
+}
+
+.subscribeButton {
+    background-color: #8B008B; /* Set the background color */
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    border: none;
+    padding: 10px 15px; /* Adjust padding to match the height of the input field */
+    border-radius: 10px;
+    cursor: pointer;
+    height: 62px; /* Ensure the button is the same height as the input field */
+    width: 125px;
+    line-height: 20px; /* Adjust line height for vertical centering of text */
+}
+
+.subscribeButton:hover {
+    background-color: #7A007A; /* Slightly darker shade for hover effect */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .formWrapper {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: start; /* Align items to the start */
+    }
+
+    .inputWrapper, .inputEmail, .subscribeButton {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .subscribeButton {
+        margin-top: 10px; /* Add space above the button */
+    }
+}

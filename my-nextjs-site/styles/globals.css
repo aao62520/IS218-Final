@@ -1,0 +1,10 @@
+/* styles/globals.css */
+body {
+    margin: 0;
+    padding: 0;
+    zoom: 90%;
+    box-sizing: border-box;
+    background-color: #F7E7CE; /* Set the background color for the entire page */
+    color: black; /* Default text color, adjust as needed */
+    font-family: 'Open Sans', sans-serif;
+  }
