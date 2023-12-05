@@ -1,4 +1,4 @@
-// components/Footer.js
+// components/Footer.js//
 import React from 'react';
 import { Link } from '@nextui-org/react';
 import styles from '../styles/Footer.module.css';
