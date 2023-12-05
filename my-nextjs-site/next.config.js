@@ -1,5 +1,6 @@
-// next.config.js
-module.exports = {
-    basePath: '/my-nextjs-site', // Adjust the path to match your folder structure
-  }
-  
+//*next.config.js//
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {}
+
+module.exports = nextConfig
