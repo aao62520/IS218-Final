@@ -1,9 +1,9 @@
-// pages/index.js
 import React from 'react';
 import dynamic from 'next/dynamic';
+import Head from 'next/head';
 import HeroPage from '../components/HeroPage';
 import SignUpSection from '../components/SignUpSection';
-import Footer from '../components/Footer'; // Import the Footer component
+import Footer from '../components/Footer';
 import styles from '../styles/Home.module.css';
 
 // Dynamically import the ProductCard component
@@ -15,6 +15,14 @@ const DynamicProductCard = dynamic(() => import('../components/ProductCard'), {
 const Index = ({ products }) => {
   return (
     <>
+      <Head>
+        <script
+          id="mcjs"
+          dangerouslySetInnerHTML={{ 
+            __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/f45d29acd497ebce0612bbfce/e46ad127352731423528cc0f4.js");`
+          }}
+        />
+      </Head>
       <HeroPage />
       <div className={styles.popularFlavorText}>
         OUR MOST POPULAR
@@ -39,7 +47,7 @@ const Index = ({ products }) => {
         <p className={styles.testimonialAuthor}>- Nathan Peterman</p>
       </div>
       <SignUpSection />
-      <Footer /> {/* Include the Footer component here */}
+      <Footer />
     </>
   );
 };
