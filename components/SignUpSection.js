@@ -1,4 +1,4 @@
-// components/SignupSection.js
+// components/SignUpSection.js
 import React, { useState } from 'react';
 import styles from '../styles/SignUpSection.module.css';
 import { Button, Input } from '@nextui-org/react';
@@ -11,25 +11,20 @@ const SignUpSection = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
-      // Replace with your MailChimp endpoint URL
-      const MAILCHIMP_URL = 'YOUR_MAILCHIMP_ENDPOINT_URL';
+    setMessage(''); // Clear previous messages
 
-      const response = await axios.post(MAILCHIMP_URL, {
-        email_address: email,
-        status: 'subscribed', // change status if needed
-      });
+    try {
+      const response = await axios.post('/api/subscribe', { email });
 
       if (response.status === 200) {
-        // Handle success (e.g., display thank you message)
         setMessage('Thank you for subscribing!');
-        setEmail('');
+        setEmail(''); // Clear the input field
       } else {
-        // Handle any errors
         setMessage('An error occurred. Please try again.');
       }
     } catch (error) {
-      setMessage('An error occurred. Please try again.');
+      const errorMessage = error.response?.data?.error || 'An error occurred. Please try again.';
+      setMessage(errorMessage);
       console.error('There was an error!', error);
     }
   };
@@ -55,7 +50,7 @@ const SignUpSection = () => {
           Subscribe
         </Button>
       </form>
-      {message && <p>{message}</p>}
+      {message && <p className={styles.message}>{message}</p>}
     </div>
   );
 };
