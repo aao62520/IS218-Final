@@ -9,10 +9,3 @@ body {
     font-family: 'Open Sans', sans-serif;
   }
 
-
-
-@media (max-width: 768px) {
-    body {
-        font-size: 14px; /* Slightly smaller font size on mobile devices */
-    }
-}

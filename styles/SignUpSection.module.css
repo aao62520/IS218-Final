@@ -57,18 +57,3 @@
     background-color: #7A007A; /* Slightly darker shade for hover effect */
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    .formWrapper {
-        flex-direction: column; /* Stack elements vertically on small screens */
-        align-items: start; /* Align items to the start */
-    }
-
-    .inputWrapper, .inputEmail, .subscribeButton {
-        width: 100%; /* Full width on small screens */
-    }
-
-    .subscribeButton {
-        margin-top: 10px; /* Add space above the button */
-    }
-}
