@@ -125,7 +125,18 @@
 
 @media (max-width: 768px) {
     .hero {
-        height: 60vh; /* Adjust as needed for smaller screens */
+        height: 60vh; /* Adjust for smaller screens */
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroContent {
+        position: static; /* or remove position */
+        transform: none;
+        text-align: center;
+        padding: 10px;
+        max-width: 100%;
     }
 }
 

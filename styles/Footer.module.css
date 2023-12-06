@@ -60,7 +60,7 @@
     .footerColumn {
         align-items: center; /* Center alignment for all columns on smaller screens */
         margin-bottom: 20px;
-        margin: 0; /* Reset margin for mobile view */
+        margin: 0 0 20px 0; /* Add space between columns */
         width: 100%; /* Full width on smaller screens */
     }
 }

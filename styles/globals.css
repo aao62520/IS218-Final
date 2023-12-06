@@ -8,3 +8,11 @@ body {
     color: black; /* Default text color, adjust as needed */
     font-family: 'Open Sans', sans-serif;
   }
+
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Slightly smaller font size on mobile devices */
+    }
+}

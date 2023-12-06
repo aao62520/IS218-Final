@@ -84,3 +84,10 @@
 .cardButton:hover {
     background-color: #b0b0b0;
 }
+
+@media (max-width: 768px) {
+    .productGrid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+}
+
