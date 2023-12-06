@@ -1,8 +1,7 @@
-// components/_app.js
-
 import React, { useEffect } from 'react';
 import '../styles/globals.css';
 import Head from 'next/head';
+import Script from 'next/script'; // Import the Script component
 import NavigationBar from '../components/NavigationBar';
 import CookieConsent from "react-cookie-consent";
 import ReactGA from 'react-ga';
@@ -10,7 +9,7 @@ import ReactGA from 'react-ga';
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     // Initialize Google Analytics
-    ReactGA.initialize('YOUR_GOOGLE_ANALYTICS_TRACKING_ID'); // Replace with your Google Analytics tracking ID
+    ReactGA.initialize('G-XDWMNHNFNE'); // Replace with your Google Analytics tracking ID
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
@@ -24,9 +23,25 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:description" content="Explore our crafted blends for a symphony of flavors." />
         <meta property="og:image" content="/teas.webp" /> {/* Replace with your image path */}
         <meta property="og:type" content="website" />
-        <link rel="icon" href="/favicon.ico" /> {/* Replace with your favicon path */}
+        <link rel="icon" href="/teas.webp" /> {/* Replace with your favicon path */}
         {/* Add additional meta tags as needed */}
       </Head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-XDWMNHNFNE"
+        strategy="afterInteractive"
+        async
+      ></Script>
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+      >
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XDWMNHNFNE');
+        `}
+      </Script>
       <NavigationBar />
       <Component {...pageProps} />
       <CookieConsent
