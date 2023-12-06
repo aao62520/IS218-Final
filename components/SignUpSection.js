@@ -1,4 +1,3 @@
-// components/SignUpSection.js
 import React, { useState } from 'react';
 import styles from '../styles/SignUpSection.module.css';
 import { Button, Input } from '@nextui-org/react';
@@ -23,9 +22,18 @@ const SignUpSection = () => {
         setMessage('An error occurred. Please try again.');
       }
     } catch (error) {
-      const errorMessage = error.response?.data?.error || 'An error occurred. Please try again.';
-      setMessage(errorMessage);
       console.error('There was an error!', error);
+
+      // Improved error handling
+      let errorMessage = 'An error occurred. Please try again.';
+      if (error.response && error.response.data) {
+        if (typeof error.response.data === 'string') {
+          errorMessage = error.response.data;
+        } else if (typeof error.response.data.error === 'string') {
+          errorMessage = error.response.data.error;
+        }
+      }
+      setMessage(errorMessage);
     }
   };
 
