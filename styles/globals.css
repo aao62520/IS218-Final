@@ -1,11 +1,16 @@
-/* styles/globals.css */
 body {
     margin: 0;
     padding: 0;
-    zoom: 90%;
     box-sizing: border-box;
-    background-color: #F7E7CE; /* Set the background color for the entire page */
-    color: black; /* Default text color, adjust as needed */
+    background-color: #F7E7CE;
+    color: black;
     font-family: 'Open Sans', sans-serif;
-  }
+    zoom: 90%;
+}
 
+@media (max-width: 768px) {
+    body {
+        zoom: 90%; 
+        width: 33em/* Adjust zoom for smaller screens */
+    }
+}
