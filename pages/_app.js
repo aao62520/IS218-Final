@@ -1,9 +1,11 @@
+// pages/_app.js
+
 import React, { useEffect } from 'react';
 import '../styles/globals.css';
 import Head from 'next/head';
-import Script from 'next/script'; // Import the Script component
+import Script from 'next/script';
 import NavigationBar from '../components/NavigationBar';
-import CookieConsent from "react-cookie-consent";
+import CookieConsent from 'react-cookie-consent';
 import ReactGA from 'react-ga';
 
 function MyApp({ Component, pageProps }) {
@@ -24,7 +26,6 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image" content="/teas.webp" /> {/* Replace with your image path */}
         <meta property="og:type" content="website" />
         <link rel="icon" href="/teas.webp" /> {/* Replace with your favicon path */}
-        {/* Add additional meta tags as needed */}
       </Head>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-XDWMNHNFNE"
@@ -53,7 +54,7 @@ function MyApp({ Component, pageProps }) {
         expires={150}
       >
         This website uses cookies to improve your experience. By using our website, you agree to our 
-        <Link href="/privacy-policy"><a style={{ color: "#F1D00A" }}>Privacy Policy</a></Link>. 
+        <Link href="https://is-218-final-beta.vercel.app/privacy-policy"><a style={{ color: "#F1D00A" }}>Privacy Policy</a></Link>. 
       </CookieConsent>
     </>
   );

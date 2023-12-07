@@ -1,9 +1,9 @@
-// pages/PrivacyPolicy.js
+// pages/policy.js
 
 import React from 'react';
 import styles from '../styles/PrivacyPolicy.module.css'; // Ensure you have this CSS module
 
-const Privacyolicy = () => {
+const PrivacyPolicy = () => {
   return (
     <div className={styles.privacyPolicyPage}>
       <h1>Privacy Policy for Blend-brew Tea</h1>
@@ -55,9 +55,9 @@ const Privacyolicy = () => {
       <section>
         <h2>Your Acceptance of These Terms</h2>
         <p>By using this site, you signify your acceptance of this policy. If you do not agree with this policy, please do not use our website. Your continued use of the site following the posting of changes to this policy will be deemed as your acceptance of those changes.</p>
-        </section>
+      </section>
 
-        </div>
+    </div>
   );
 };
 
