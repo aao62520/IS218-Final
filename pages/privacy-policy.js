@@ -3,7 +3,7 @@
 import React from 'react';
 import styles from '../styles/PrivacyPolicy.module.css'; // Ensure you have this CSS module
 
-const PrivacyPolicy = () => {
+const Privacyolicy = () => {
   return (
     <div className={styles.privacyPolicyPage}>
       <h1>Privacy Policy for Blend-brew Tea</h1>
