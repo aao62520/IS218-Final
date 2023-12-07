@@ -7,6 +7,7 @@ import Script from 'next/script';
 import NavigationBar from '../components/NavigationBar';
 import CookieConsent from 'react-cookie-consent';
 import ReactGA from 'react-ga';
+import Link from 'next/link'; // Correctly import Link from next/link
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -54,7 +55,7 @@ function MyApp({ Component, pageProps }) {
         expires={150}
       >
         This website uses cookies to improve your experience. By using our website, you agree to our 
-        <a href="https://is-218-final-beta.vercel.app/privacy-policy" style={{ color: "#F1D00A" }}>Privacy Policy</a>. 
+        <Link href="https://is-218-final-beta.vercel.app/privacy-policy"><a style={{ color: "#F1D00A" }}>Privacy Policy</a></Link>. 
       </CookieConsent>
     </>
   );
