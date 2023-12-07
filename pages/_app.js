@@ -54,7 +54,7 @@ function MyApp({ Component, pageProps }) {
         expires={150}
       >
         This website uses cookies to improve your experience. By using our website, you agree to our 
-        <Link href="https://is-218-final-beta.vercel.app/privacy-policy"><a style={{ color: "#F1D00A" }}>Privacy Policy</a></Link>. 
+        <a href="https://is-218-final-beta.vercel.app/privacy-policy" style={{ color: "#F1D00A" }}>Privacy Policy</a>. 
       </CookieConsent>
     </>
   );
