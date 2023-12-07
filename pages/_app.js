@@ -7,7 +7,6 @@ import Script from 'next/script';
 import NavigationBar from '../components/NavigationBar';
 import CookieConsent from 'react-cookie-consent';
 import ReactGA from 'react-ga';
-import Link from 'next/link'; // Correctly import Link from next/link
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
