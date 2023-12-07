@@ -53,7 +53,7 @@ function MyApp({ Component, pageProps }) {
         expires={150}
       >
         This website uses cookies to improve your experience. By using our website, you agree to our 
-        <Link href="/privacy-policy"><a style={{ color: "#F1D00A" }}>Privacy Policy</a></Link>. 
+        <Link href="/PrivacyPolicy"><a style={{ color: "#F1D00A" }}>Privacy Policy</a></Link>. 
       </CookieConsent>
     </>
   );
