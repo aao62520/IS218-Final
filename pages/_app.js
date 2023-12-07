@@ -7,6 +7,7 @@ import Script from 'next/script';
 import NavigationBar from '../components/NavigationBar';
 import CookieConsent from 'react-cookie-consent';
 import ReactGA from 'react-ga';
+import { Link } from '@nextui-org/react'; // Import Link from @nextui-org/react
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -49,12 +50,12 @@ function MyApp({ Component, pageProps }) {
         location="bottom"
         buttonText="I understand"
         cookieName="blendbrewTeaCookieConsent"
-        style={{ background: "#2B373B", fontSize: "16px" }} // Increased font size
-        buttonStyle={{ color: "#4e503b", fontSize: "16px" }} // Increased button font size
+        style={{ background: "#2B373B", fontSize: "16px" }}
+        buttonStyle={{ color: "#4e503b", fontSize: "16px" }}
         expires={150}
       >
         This website uses cookies to improve your experience. By using our website, you agree to our 
-        <Link href="https://is-218-final-beta.vercel.app/privacy-policy"><a style={{ color: "#F1D00A" }}>Privacy Policy</a></Link>. 
+        <Link href="/privacy-policy" style={{ color: "#F1D00A" }}>Privacy Policy</Link>. 
       </CookieConsent>
     </>
   );
