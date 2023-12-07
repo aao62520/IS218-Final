@@ -48,11 +48,12 @@ function MyApp({ Component, pageProps }) {
         location="bottom"
         buttonText="I understand"
         cookieName="blendbrewTeaCookieConsent"
-        style={{ background: "#2B373B" }}
-        buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+        style={{ background: "#2B373B", fontSize: "16px" }} // Increased font size
+        buttonStyle={{ color: "#4e503b", fontSize: "16px" }} // Increased button font size
         expires={150}
       >
-        This website uses cookies to improve your experience. By using our website, you agree to our cookie policy.
+        This website uses cookies to improve your experience. By using our website, you agree to our 
+        <a href="/privacy-policy" style={{ color: "#F1D00A" }}>Privacy Policy</a>. {/* Link to your privacy policy */}
       </CookieConsent>
     </>
   );
