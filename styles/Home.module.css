@@ -1,7 +1,7 @@
 /* styles/home.module.css */
 /* Adjusted hero section */
 .hero {
-    background-image: url('/teas.webp');
+    background-image: url('/happy.png');
     background-size: cover; /* This will cover the entire area of the div */
     background-position: center center; /* Centers the image */
     background-repeat: no-repeat;
