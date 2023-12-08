@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="keywords" content="tea, blendbrew tea, organic tea, herbal tea, green tea, black tea, loose leaf tea, tea blends, specialty tea, artisan tea" />
         <meta property="og:title" content="Blend-brew Tea" />
         <meta property="og:description" content="Explore our crafted blends for a symphony of flavors." />
-        <meta property="og:image" content="/happy.jpg" /> {/* Replace with your image path */}
+        <meta property="og:image" content="/happy1.jpg" /> {/* Replace with your image path */}
         <meta property="og:type" content="website" />
         <link rel="icon" href="/teas.webp" /> {/* Replace with your favicon path */}
       </Head>
