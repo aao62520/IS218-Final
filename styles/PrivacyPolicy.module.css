@@ -1,0 +1,40 @@
+/* PrivacyPolicy.module.css */
+
+.privacyPolicyPage {
+    padding: 20px;
+    margin: auto;
+    max-width: 800px; /* Adjust as needed for your layout */
+    background-color: #fff; /* Or any color that fits your site's theme */
+    color: #333; /* Standard dark color for text */
+    font-family: 'Open Sans', sans-serif; /* Change to your preferred font */
+  }
+  
+  .privacyPolicyPage h1 {
+    text-align: center;
+    color: #A68B7C; /* Adjust to match your site's theme */
+    margin-bottom: 20px;
+  }
+  
+  .privacyPolicyPage section {
+    margin-bottom: 20px;
+  }
+  
+  .privacyPolicyPage h2 {
+    color: #A68B7C; /* Adjust to match your site's theme */
+    margin-bottom: 10px;
+  }
+  
+  .privacyPolicyPage p, .privacyPolicyPage ul {
+    line-height: 1.6;
+    color: #333; /* Standard dark color for text */
+  }
+  
+  .privacyPolicyPage ul {
+    padding-left: 20px;
+    list-style-type: disc; /* Or choose 'circle', 'square', etc. */
+  }
+  
+  .privacyPolicyPage li {
+    margin-bottom: 10px;
+  }
+  
