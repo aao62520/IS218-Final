@@ -88,3 +88,31 @@
     padding: 20px;
     justify-items: center; /* Center the items horizontally */
 }
+
+/* Add this to your Home.module.css */
+.testimonialSection {
+    text-align: center;
+    margin-top: 50px; /* Adjust as needed */
+    margin-bottom: 50px; /* Adjust as needed */
+  }
+  
+  .testimonialText {
+    font-style: italic;
+    font-weight: 800; /* Extra bold weight */
+    font-size: 2rem; /* Larger font size for the text */
+    color: #333; /* This is a dark grey, you can choose any color you like */
+    margin: 0 auto; /* Centers the block horizontally */
+    max-width: 800px; /* Maximum width of the text block */
+    padding: 20px; /* Padding around the text */
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .testimonialAuthor {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem; /* Slightly larger font size for the author's name */
+    display: block; /* Displays the author's name on a new line */
+    margin-top: 10px; /* Adds space above the author's name */
+    font-family: 'Open Sans', sans-serif;
+  }
+  
