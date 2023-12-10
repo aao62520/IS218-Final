@@ -31,3 +31,37 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.cardContent {
+    text-align: center;
+    color: black;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cardTitle {
+    font-size: 1.2rem;
+    margin-top: 8px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cardDescription {
+    font-size: 0.9rem;
+    margin-top: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.cardNumber {
+    font-size: 1.2rem;
+    color: black;
+    margin: 10px 0;
+    font-family: 'Open Sans', sans-serif;
+}
