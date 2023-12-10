@@ -1,0 +1,119 @@
+/* styles/home.module.css */
+/* Adjusted hero section */
+.hero {
+    background-image: url('/happy1.webp');
+    background-size: cover; /* This will cover the entire area of the div */
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: left;
+    padding: 30px 15px;
+    height: 80vh; /* Increased height to stretch the image down */
+    display: flex;
+    justify-content: flex-start; /* Aligns content to the start (left side for flex-direction: row) */
+    align-items: flex-start; /* Aligns content to the top */
+    padding-top: 30px; /* Adds padding at the top of the hero */
+    padding-left: 30px; 
+    
+}
+
+/* styles/home.module.css */
+.heroContent {
+    background-color: rgba(166, 139, 124, 0.7); 
+    padding: 20px; /* Adjust padding */
+    width: auto; /* Let the content define the width */
+    max-width: 600px; /* Set a maximum width */
+    text-align: center; /* Center text */
+    border-radius: 10px;
+    position: absolute; /* Position it absolutely within the hero which is relative */
+    top: 30px; /* Position from the top */
+    left: 30px; /* Position from the left */
+    transform: none; /* Remove centering transform */
+}
+
+.heroTitle {
+    margin: 0 0 20px 0; /* Adjust bottom margin for spacing */
+}
+
+.heroSubtitle {
+    margin: 0 0 20px 0; /* Adjust bottom margin for spacing */
+    font-weight: 600; /* Semi-bold font weight */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.heroButton {
+    background-color: white; /* Or any color you prefer */
+    color: black; /* Or any color you prefer for the text */
+    font-size: 1.2rem; /* Larger font size for the text */
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 30px; /* Larger padding for a bigger button */
+    border-radius: 20px; /* Rounded corners for the button */
+    border: none;
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    transition: all 0.3s ease-in-out; /* Smooth transition for effects */
+    text-transform: uppercase; /* Optional: transforms text to uppercase */
+    display: inline-block; /* Allows you to set padding and margins */
+    margin-top: 20px; /* Add space above the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.heroButton:hover {
+    background-color: #b0b0b0; /* Slightly darker background on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}
+
+.customButton {
+    border-radius: 20px;
+    border: none;
+    font-size: 1.2rem; /* Increase the font size */
+    padding: 15px 30px; /* Increase padding to make the button larger */
+  }
+
+/* Add this to your home.module.css */
+.popularFlavorText {
+    text-align: center; /* Center the text */
+    color: black; /* Set the text color to black */
+    font-weight: bold; /* Make the text bold */
+    font-size: 2rem; /* Increase font size */
+    margin-top: 40px; /* Add some space above the text */
+    margin-bottom: 20px; /* Add some space below the text */
+    font-family: 'Open Sans', sans-serif;
+}
+
+ 
+.productGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center; /* Center the items horizontally */
+}
+
+/* Add this to your Home.module.css */
+.testimonialSection {
+    text-align: center;
+    margin-top: 50px; /* Adjust as needed */
+    margin-bottom: 50px; /* Adjust as needed */
+  }
+  
+  .testimonialText {
+    font-style: italic;
+    font-weight: 800; /* Extra bold weight */
+    font-size: 2rem; /* Larger font size for the text */
+    color: #333; /* This is a dark grey, you can choose any color you like */
+    margin: 0 auto; /* Centers the block horizontally */
+    max-width: 800px; /* Maximum width of the text block */
+    padding: 20px; /* Padding around the text */
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .testimonialAuthor {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem; /* Slightly larger font size for the author's name */
+    display: block; /* Displays the author's name on a new line */
+    margin-top: 10px; /* Adds space above the author's name */
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  
