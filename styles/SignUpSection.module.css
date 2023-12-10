@@ -1,0 +1,23 @@
+/* styles/SignUpSection.module.css */
+
+.signupSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 1rem; /* Adjust as necessary */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.formWrapper {
+    display: flex; /* Align children horizontally */
+    align-items: center; /* Align children vertically */
+    gap: 10px; /* Adds space between elements */
+    
+}
+
+.signupHeader {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem; /* Adjust font size as needed */
+}
