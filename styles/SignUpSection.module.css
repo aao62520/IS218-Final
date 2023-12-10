@@ -21,3 +21,20 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem; /* Adjust font size as needed */
 }
+
+.inputWrapper {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center-align vertically */
+    flex-grow: 1; /* Allow the wrapper to expand */
+}
+
+.inputEmail {
+    background-color: #D9D9D9;
+    width: 100%; /* Use the full width of the wrapper */
+    height: 40px; /* Adjust height as needed */
+    border: 1px solid #007BFF; /* Styling, can be adjusted */
+    padding: 0 10px; /* Padding inside the input */
+    border-radius: 4px;
+    padding-top: 20px;
+
+}
