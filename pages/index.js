@@ -1,4 +1,4 @@
-// pages/index.js
+// pages/index.js//
 
 import React from 'react';
 import dynamic from 'next/dynamic';
@@ -81,3 +81,4 @@ export async function getStaticProps() {
 
 export default Index;
 
+ 
