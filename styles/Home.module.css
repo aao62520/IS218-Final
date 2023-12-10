@@ -68,3 +68,23 @@
     font-size: 1.2rem; /* Increase the font size */
     padding: 15px 30px; /* Increase padding to make the button larger */
   }
+
+  /* Add this to your home.module.css */
+.popularFlavorText {
+    text-align: center; /* Center the text */
+    color: black; /* Set the text color to black */
+    font-weight: bold; /* Make the text bold */
+    font-size: 2rem; /* Increase font size */
+    margin-top: 40px; /* Add some space above the text */
+    margin-bottom: 20px; /* Add some space below the text */
+    font-family: 'Open Sans', sans-serif;
+}
+
+ 
+.productGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center; /* Center the items horizontally */
+}
