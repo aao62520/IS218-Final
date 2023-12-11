@@ -1,3 +1,5 @@
+// components/SignUp.Section.js
+
 import React, { useState } from 'react';
 import styles from '../styles/SignUpSection.module.css';
 import { Button, Input } from '@nextui-org/react';
