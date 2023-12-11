@@ -13,3 +13,8 @@ test('Home page has correct SEO description', async ({ page }) => {
   expect(description).toBe("Discover the art of fine tea with Blend-brew Tea. Explore our crafted blends for a symphony of flavors.");
 });
 
+test('Navigates to footer section', async ({ page }) => {
+  await page.goto('http://localhost:3000');
+  await page.click('text=About Us');
+  await expect(page.url()).toContain('#footer');
+});
