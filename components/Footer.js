@@ -1,11 +1,11 @@
-// components/Footer.js//
+// components/Footer.js
 import React from 'react';
 import { Link } from '@nextui-org/react';
 import styles from '../styles/Footer.module.css';
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer id="footer" className={styles.footer}> {/* Added ID for smooth scroll targeting */}
       <div className={styles.footerColumn}>
         <h3>About Blend-brew Tea</h3>
         <p>Discover the art of fine tea with Blend-brew Tea. Founded in 2023 with a passion for sourcing the finest ingredients, we craft blends that offer a symphony of flavors, capturing the essence of nature in every cup. Committed to sustainable practices, we bring you an authentic tea experience that celebrates tradition and innovation. Join us on a journey of taste, quality, and the pure joy of tea.</p>
@@ -33,4 +33,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

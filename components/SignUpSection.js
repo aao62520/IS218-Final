@@ -40,7 +40,7 @@ const SignUpSection = () => {
   };
 
   return (
-    <div className={styles.signupSection}>
+    <div id="SignUpSection" className={styles.signupSection}> {/* Added ID for smooth scroll targeting */}
       <form onSubmit={handleSubmit} className={styles.formWrapper}>
         <h4 className={styles.signupHeader}>
           Sign up for a free trial and get 10% off your next order:
