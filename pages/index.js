@@ -22,10 +22,9 @@ const Index = ({ products }) => {
         <meta name="keywords" content="tea, blendbrew tea, organic tea, herbal tea, green tea, black tea, loose leaf tea, tea blends, specialty tea, artisan tea" />
         <meta property="og:title" content="Blend-brew Tea" />
         <meta property="og:description" content="Explore our crafted blends for a symphony of flavors." />
-        <meta property="og:image" content="/teas.webp" /> {/* Replace with your image path */}
+        <meta property="og:image" content="/teas.webp" />
         <meta property="og:type" content="website" />
-        <link rel="icon" href="/happy.png" /> {/* Replace with your favicon path */}
-        {/* Additional meta tags as needed */}
+        <link rel="icon" href="/happy.png" />
         <script
           id="mcjs"
           dangerouslySetInnerHTML={{ 
@@ -46,7 +45,7 @@ const Index = ({ products }) => {
             title={product.title} 
             description={product.description} 
             imageSrc={product.imageSrc}
-            calories={product.calories} // Changed 'number' to 'calories'
+            calories={product.calories}
           />
         ))}
       </div>
@@ -63,6 +62,7 @@ const Index = ({ products }) => {
 };
 
 export async function getStaticProps() {
+  // Simulated product data
   const products = [
     { id: 1, title: "Emerald Essence Brew", description: "A rich blend of green tea with refreshing botanicals.", imageSrc: "/tea1.png", calories: 30 },
     { id: 2, title: "Midnight Majesty Blend", description: "A deep, dark twist of black teas and magical herbs.", imageSrc: "/tea2.png", calories: 50 },
@@ -79,4 +79,3 @@ export async function getStaticProps() {
 }
 
 export default Index;
-
