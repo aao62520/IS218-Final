@@ -1,5 +1,4 @@
-// pages/index.js//
-
+// index.js
 import React from 'react';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
@@ -25,7 +24,7 @@ const Index = ({ products }) => {
         <meta property="og:description" content="Explore our crafted blends for a symphony of flavors." />
         <meta property="og:image" content="/teas.webp" /> {/* Replace with your image path */}
         <meta property="og:type" content="website" />
-        <link rel="icon" href="/teas.webp" /> {/* Replace with your favicon path */}
+        <link rel="icon" href="/happy.png" /> {/* Replace with your favicon path */}
         {/* Additional meta tags as needed */}
         <script
           id="mcjs"
@@ -47,7 +46,7 @@ const Index = ({ products }) => {
             title={product.title} 
             description={product.description} 
             imageSrc={product.imageSrc}
-            number={product.number}
+            calories={product.calories} // Changed 'number' to 'calories'
           />
         ))}
       </div>
@@ -65,9 +64,9 @@ const Index = ({ products }) => {
 
 export async function getStaticProps() {
   const products = [
-    { id: 1, title: "Emerald Essence Brew", description: "A rich blend of green tea with refreshing botanicals.", imageSrc: "/tea1.png", number: 27 },
-    { id: 2, title: "Midnight Majesty Blend", description: "A deep, dark twist of black teas and magical herbs.", imageSrc: "/tea2.png", number: 30 },
-    { id: 3, title: "Herbal Haven Brew", description: "A soothing concoction of herbal delights to relax the senses.", imageSrc: "/tea3.png", number: 33 },
+    { id: 1, title: "Emerald Essence Brew", description: "A rich blend of green tea with refreshing botanicals.", imageSrc: "/tea1.png", calories: 30 },
+    { id: 2, title: "Midnight Majesty Blend", description: "A deep, dark twist of black teas and magical herbs.", imageSrc: "/tea2.png", calories: 50 },
+    { id: 3, title: "Herbal Haven Brew", description: "A soothing concoction of herbal delights to relax the senses.", imageSrc: "/tea3.png", calories: 40 },
     // Add more products as needed
   ];
 
