@@ -1,7 +1,7 @@
 /* styles/home.module.css */
 /* Adjusted hero section */
 .hero {
-    background-image: url('/happy1.png');
+    background-image: url('/happy1.webp');
     background-size: cover; /* This will cover the entire area of the div */
     background-position: center center; /* Centers the image */
     background-repeat: no-repeat;
@@ -69,7 +69,7 @@
     padding: 15px 30px; /* Increase padding to make the button larger */
   }
 
-/* Add this to your home.module.css */
+  /* Add this to your home.module.css */
 .popularFlavorText {
     text-align: center; /* Center the text */
     color: black; /* Set the text color to black */
@@ -115,5 +115,4 @@
     margin-top: 10px; /* Adds space above the author's name */
     font-family: 'Open Sans', sans-serif;
   }
-  
   
