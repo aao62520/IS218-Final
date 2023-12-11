@@ -1,11 +1,11 @@
-// components/HeroPage.js//
+// components/HeroPage.js
 import React from 'react';
 import { Button } from '@nextui-org/react';
 import styles from '../styles/Home.module.css';
 
 const HeroPage = () => {
   return (
-    <div className={styles.hero}>
+    <div id="top" className={styles.hero}> {/* Added ID for smooth scroll targeting */}
       <div className={styles.heroContent}>
         <h1 className={styles.heroTitle}>
           Where Flavor Meets Tranquility
