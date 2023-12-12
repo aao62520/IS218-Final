@@ -10,10 +10,8 @@ const NavigationBar = () => {
   const handleNavigation = (e, hash) => {
     e.preventDefault();
     if (router.pathname !== '/') {
-      // Navigate to the home page and then scroll to the section
       router.push('/#' + hash).then(() => window.scrollTo(0, 0));
     } else {
-      // Scroll to the section on the current page
       const element = document.getElementById(hash);
       element?.scrollIntoView({ behavior: 'smooth' });
     }
@@ -24,9 +22,15 @@ const NavigationBar = () => {
       <span className={styles.brand}>Blend-brew Tea</span>
       <nav>
         <ul className={styles.menu}>
-          <li><a href="#top" onClick={(e) => handleNavigation(e, 'top')} className={styles.menuItem}>Home</a></li>
-          <li><a href="#footer" onClick={(e) => handleNavigation(e, 'footer')} className={styles.menuItem}>About Us</a></li>
-          <li><a href="#SignUpSection" onClick={(e) => handleNavigation(e, 'SignUpSection')} className={styles.menuItem}>Sign Up</a></li>
+          <li>
+            <a href="#top" onClick={(e) => handleNavigation(e, 'top')} className={styles.menuItem} data-testid="nav-home">Home</a>
+          </li>
+          <li>
+            <a href="#footer" onClick={(e) => handleNavigation(e, 'footer')} className={styles.menuItem} data-testid="nav-about-us">About Us</a>
+          </li>
+          <li>
+            <a href="#SignUpSection" onClick={(e) => handleNavigation(e, 'SignUpSection')} className={styles.menuItem} data-testid="nav-sign-up">Subscribe</a>
+          </li>
         </ul>
       </nav>
     </Navbar>
