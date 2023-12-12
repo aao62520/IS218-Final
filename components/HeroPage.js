@@ -11,7 +11,7 @@ const HeroPage = () => {
           Where Flavor Meets Tranquility
         </h1>
         <p className={styles.heroSubtitle} data-testid="heroSubtitle">
-          Shop for our quality products
+        Sign up for 10% off your next cup
         </p>
         <Button auto ghost className={styles.heroButton} data-testid="heroButton">
           Shop Now
