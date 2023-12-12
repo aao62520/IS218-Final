@@ -66,3 +66,21 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+
+/* Adjust the line clamp for the description on smaller screens */
+@media (max-width: 768px) {
+    .cardContent {
+        -webkit-line-clamp: 9; /* Show more lines on smaller screens */
+    }
+}
+
+/* Additional responsive adjustments for the card */
+@media (max-width: 480px) {
+    .card {
+        min-height: 420px; /* Further increase for very small screens */
+    }
+
+    .cardBody {
+        margin-bottom: 20px; /* Add some space at the bottom */
+    }
+}
