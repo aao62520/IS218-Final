@@ -33,3 +33,14 @@ test('Product Grid displays products correctly', async ({ page }) => {
   await expect(page.locator('text=Midnight Majesty Blend')).toBeVisible();
   await expect(page.locator('text=Herbal Haven Brew')).toBeVisible();
 });
+
+test('Testimonial section displays the correct text', async ({ page }) => {
+  // Navigate to the page
+  await page.goto('http://localhost:3000');
+
+  // Locate the testimonial text using the data-testid attribute
+  const testimonialText = page.locator('[data-testid="testimonialText"]');
+
+  // Assert that the testimonial text contains the expected content
+  await expect(testimonialText).toContainText("Blendbrew's tea is a delightful blend of quality and flavor! Each sip feels like a journey through the finest tea leaves, offering a rich and aromatic experience that soothes the senses.");
+});
