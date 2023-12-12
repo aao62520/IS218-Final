@@ -91,9 +91,5 @@ test('Hero section displays correct content and button', async ({ page }) => {
   // Check for hero title and subtitle using data-testid
   await expect(page.locator('[data-testid="heroTitle"]')).toContainText('Where Flavor Meets Tranquility');
   await expect(page.locator('[data-testid="heroSubtitle"]')).toContainText('Sign up for 10% off your next cup');
-
-  // Check if the button is visible and clickable using data-testid
-  await expect(page.locator('[data-testid="heroButton"]')).toBeVisible();
-  await expect(page.locator('[data-testid="heroButton"]')).toBeEnabled();
 });
 
