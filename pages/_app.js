@@ -3,9 +3,11 @@
 import React, { useEffect } from 'react';
 import '../styles/globals.css';
 import Head from 'next/head';
+import Script from 'next/script';
 import NavigationBar from '../components/NavigationBar';
 import CookieConsent from 'react-cookie-consent';
 import ReactGA from 'react-ga';
+import { Link } from '@nextui-org/react'; // Import Link from @nextui-org/react
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -26,21 +28,6 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:type" content="website" />
         <link rel="icon" href="/teas.webp" /> {/* Replace with your favicon path */}
       </Head>
-      {/* Removed Mailchimp script */}
-      <NavigationBar />
-      <Component {...pageProps} />
-      <CookieConsent
-        location="bottom"
-        buttonText="I understand"
-        cookieName="blendbrewTeaCookieConsent"
-        style={{ background: "#2B373B", fontSize: "16px" }}
-        buttonStyle={{ color: "#4e503b", fontSize: "16px" }}
-        expires={150}
-      >
-        This website uses cookies to improve your experience. By using our website, you agree to our 
-        <Link href="/policy" style={{ color: "#F1D00A" }}>Privacy Policy</Link>. 
-      </CookieConsent>
-      {/* Google Analytics Scripts */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-XDWMNHNFNE"
         strategy="afterInteractive"
@@ -57,6 +44,19 @@ function MyApp({ Component, pageProps }) {
           gtag('config', 'G-XDWMNHNFNE');
         `}
       </Script>
+      <NavigationBar />
+      <Component {...pageProps} />
+      <CookieConsent
+        location="bottom"
+        buttonText="I understand"
+        cookieName="blendbrewTeaCookieConsent"
+        style={{ background: "#2B373B", fontSize: "16px" }}
+        buttonStyle={{ color: "#4e503b", fontSize: "16px" }}
+        expires={150}
+      >
+        This website uses cookies to improve your experience. By using our website, you agree to our 
+        <Link href="/policy" style={{ color: "#F1D00A" }}>Privacy Policy</Link>. 
+      </CookieConsent>
     </>
   );
 }
