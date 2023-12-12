@@ -118,3 +118,48 @@
   }
   
   
+
+.hero {
+    /* ... other styles ... */
+    /* Adjust for mobile devices */
+    @media (max-width: 768px) {
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        padding: 10px; /* Adjust padding as needed */
+    }
+}
+
+.hero {
+    /* ... other styles ... */
+    /* Adjust for mobile devices */
+    @media (max-width: 768px) {
+        justify-content: flex-start; /* Align content to the start (left side) */
+        align-items: flex-start; /* Align content to the top */
+        padding-top: 20px; /* Add padding at the top */
+        padding-left: 20px; /* Add padding on the left */
+    }
+}
+
+.heroContent {
+    /* ... other styles ... */
+    /* Adjust for mobile devices */
+    @media (max-width: 768px) {
+        position: absolute; /* Position it absolutely within the hero */
+        top: 10; /* Align to the top */
+        left: 10; /* Align to the left */
+        transform: none; /* Remove any transforms */
+        margin: 0; /* Reset margin */
+        width: auto; /* Auto width based on content */
+        max-width: none; /* Remove max-width restriction */
+        padding: 10px; /* Adjust padding for mobile */
+    }
+}
+
+/* Adjusting hero title and subtitle for mobile */
+.heroTitle, .heroSubtitle {
+    @media (max-width: 768px) {
+        /* Adjust font size and other styles for mobile */
+        font-size: smaller; /* Example: Adjust font size for mobile */
+        /* Additional styling adjustments as needed */
+    }
+}
