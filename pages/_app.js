@@ -1,3 +1,4 @@
+// pages/_app.js
 import React, { useEffect } from 'react';
 import '../styles/globals.css';
 import Head from 'next/head';
@@ -30,12 +31,12 @@ function MyApp({ Component, pageProps }) {
         src="https://www.googletagmanager.com/gtag/js?id=G-XDWMNHNFNE"
         strategy="afterInteractive"
         async
-        data-testid="google-analytics-script" // Added data-testid attribute
+        data-testid="google-analytics-script"
       ></Script>
       <Script
         id="google-analytics"
         strategy="afterInteractive"
-        data-testid="google-analytics-inline-script" // Added data-testid attribute
+        data-testid="google-analytics-inline-script"
       >
         {`
           window.dataLayer = window.dataLayer || [];
@@ -53,6 +54,7 @@ function MyApp({ Component, pageProps }) {
         style={{ background: "#2B373B", fontSize: "16px" }}
         buttonStyle={{ color: "#4e503b", fontSize: "16px" }}
         expires={150}
+        data-testid="cookie-consent-banner" // Added data-testid attribute for testing
       >
         This website uses cookies to improve your experience. By using our website, you agree to our 
         <Link href="/policy" style={{ color: "#F1D00A" }}>Privacy Policy</Link>. 

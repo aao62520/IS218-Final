@@ -115,3 +115,16 @@ test('Privacy policy page displays the correct content', async ({ page }) => {
   await expect(page.locator('data-testid=privacy-info-collection')).toBeVisible();
   // Add more checks for other sections using their respective data-testid attributes
 });
+
+
+test('Cookie consent banner is functional', async ({ page }) => {
+  // Go to your site's homepage
+  await page.goto('http://localhost:3000');
+
+  // Optionally clear cookies and local storage to ensure the banner shows up for repeat tests
+  await page.context().clearCookies();
+  await page.evaluate(() => localStorage.clear());
+
+  
+});
+
