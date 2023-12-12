@@ -1,4 +1,3 @@
-// index.js
 import React from 'react';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
@@ -25,12 +24,6 @@ const Index = ({ products }) => {
         <meta property="og:image" content="/teas.webp" />
         <meta property="og:type" content="website" />
         <link rel="icon" href="/happy.png" />
-        <script
-          id="mcjs"
-          dangerouslySetInnerHTML={{ 
-            __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/f45d29acd497ebce0612bbfce/e46ad127352731423528cc0f4.js");`
-          }}
-        />
       </Head>
       <HeroPage />
       <div className={styles.popularFlavorText}>
