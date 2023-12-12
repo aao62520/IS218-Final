@@ -5,15 +5,15 @@ import styles from '../styles/Home.module.css';
 
 const HeroPage = () => {
   return (
-    <div id="top" className={styles.hero}> {/* Added ID for smooth scroll targeting */}
+    <div id="top" className={styles.hero}>
       <div className={styles.heroContent}>
-        <h1 className={styles.heroTitle}>
+        <h1 className={styles.heroTitle} data-testid="heroTitle">
           Where Flavor Meets Tranquility
         </h1>
-        <p className={styles.heroSubtitle}>
+        <p className={styles.heroSubtitle} data-testid="heroSubtitle">
           Shop for our quality products
         </p>
-        <Button auto ghost className={styles.heroButton}>
+        <Button auto ghost className={styles.heroButton} data-testid="heroButton">
           Shop Now
         </Button>
       </div>
