@@ -14,3 +14,11 @@ test('Home page has correct SEO description', async ({ page }) => {
 });
 
 
+test('Footer section has correct content', async ({ page }) => {
+  await page.goto('http://localhost:3000');
+
+  // Check for specific text in the footer
+  await expect(page.locator('footer #footer')).toContainText('About Blend-brew Tea');
+  await expect(page.locator('footer #footer')).toContainText('FAQ');
+  await expect(page.locator('footer #footer')).toContainText('Contact Us');
+});
