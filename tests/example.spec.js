@@ -21,4 +21,15 @@ test('Footer section has correct content', async ({ page }) => {
   await expect(page.locator('footer')).toContainText('About Blend-brew Tea');
   await expect(page.locator('footer')).toContainText('FAQ');
   await expect(page.locator('footer')).toContainText('Contact Us');
+
+
+});
+
+test('Product Grid displays products correctly', async ({ page }) => {
+  await page.goto('http://localhost:3000');
+
+  // Check for specific product titles
+  await expect(page.locator('text=Emerald Essence Brew')).toBeVisible();
+  await expect(page.locator('text=Midnight Majesty Blend')).toBeVisible();
+  await expect(page.locator('text=Herbal Haven Brew')).toBeVisible();
 });
