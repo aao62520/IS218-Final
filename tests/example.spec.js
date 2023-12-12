@@ -93,3 +93,15 @@ test('Hero section displays correct content and button', async ({ page }) => {
   await expect(page.locator('[data-testid="heroSubtitle"]')).toContainText('Sign up for 10% off your next cup');
 });
 
+test('Subscribe button and description are present in the SignUpSection', async ({ page }) => {
+  await page.goto('http://localhost:3000');
+
+  // Check if the description text is present
+  const descriptionText = page.locator('text=Sign up for a free trial and get 10% off your next order:');
+  await expect(descriptionText).toBeVisible();
+
+  // Check if the subscribe button is present and has the correct text
+  const subscribeButton = page.locator('[data-testid="subscribe-button"]');
+  await expect(subscribeButton).toBeVisible();
+  await expect(subscribeButton).toHaveText('Subscribe');
+});

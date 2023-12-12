@@ -26,7 +26,6 @@ const SignUpSection = () => {
     } catch (error) {
       console.error('There was an error!', error);
 
-      // Improved error handling
       let errorMessage = 'An error occurred. Please try again.';
       if (error.response && error.response.data) {
         if (typeof error.response.data === 'string') {
@@ -40,7 +39,7 @@ const SignUpSection = () => {
   };
 
   return (
-    <div id="SignUpSection" className={styles.signupSection}> {/* Added ID for smooth scroll targeting */}
+    <div id="SignUpSection" className={styles.signupSection}>
       <form onSubmit={handleSubmit} className={styles.formWrapper}>
         <h4 className={styles.signupHeader}>
           Sign up for a free trial and get 10% off your next order:
@@ -54,13 +53,14 @@ const SignUpSection = () => {
             className={styles.inputEmail}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            data-testid="email-input" // Adding data-testid for email input
           />
         </div>
-        <Button auto color="primary" className={styles.subscribeButton} type="submit">
+        <Button auto color="primary" className={styles.subscribeButton} type="submit" data-testid="subscribe-button">
           Subscribe
         </Button>
       </form>
-      {message && <p className={styles.message}>{message}</p>}
+      {message && <p className={styles.message} data-testid="subscription-message">{message}</p>} {/* Adding data-testid for message */}
     </div>
   );
 };
