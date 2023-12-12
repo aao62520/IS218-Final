@@ -64,3 +64,24 @@ test('Google Analytics is correctly initialized', async ({ page }) => {
   expect(isDataLayerDefined).toBe(true);
 });
 
+
+
+test.describe('Navigation Bar Text Tests', () => {
+    test('Text for Home, About Us, and Subscribe links are correct', async ({ page }) => {
+        // Go to your site's home page
+        await page.goto('http://localhost:3000');
+
+        // Check if the 'Home' link text is correct
+        const homeLink = page.locator('[data-testid="nav-home"]');
+        await expect(homeLink).toHaveText('Home');
+
+        // Check if the 'About Us' link text is correct
+        const aboutUsLink = page.locator('[data-testid="nav-about-us"]');
+        await expect(aboutUsLink).toHaveText('About Us');
+
+        // Check if the 'Sign Up' link text is correct
+        const signUpLink = page.locator('[data-testid="nav-sign-up"]');
+        await expect(signUpLink).toHaveText('Subscribe');
+    });
+});
+
