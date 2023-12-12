@@ -44,3 +44,23 @@ test('Testimonial section displays the correct text', async ({ page }) => {
   // Assert that the testimonial text contains the expected content
   await expect(testimonialText).toContainText("Blendbrew's tea is a delightful blend of quality and flavor! Each sip feels like a journey through the finest tea leaves, offering a rich and aromatic experience that soothes the senses.");
 });
+
+
+test('Google Analytics is correctly initialized', async ({ page }) => {
+  await page.goto('http://localhost:3000');
+
+  // Check if the Google Analytics initialization function is defined
+  const isGAInitialized = await page.evaluate(() => {
+    return typeof window.gtag === 'function';
+  });
+
+  expect(isGAInitialized).toBe(true);
+
+  // Optionally, you can also check if the window dataLayer object has been created
+  const isDataLayerDefined = await page.evaluate(() => {
+    return typeof window.dataLayer !== 'undefined';
+  });
+
+  expect(isDataLayerDefined).toBe(true);
+});
+
