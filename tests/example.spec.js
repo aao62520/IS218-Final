@@ -85,3 +85,15 @@ test.describe('Navigation Bar Text Tests', () => {
     });
 });
 
+test('Hero section displays correct content and button', async ({ page }) => {
+  await page.goto('http://localhost:3000');
+
+  // Check for hero title and subtitle using data-testid
+  await expect(page.locator('[data-testid="heroTitle"]')).toContainText('Where Flavor Meets Tranquility');
+  await expect(page.locator('[data-testid="heroSubtitle"]')).toContainText('Shop for our quality products');
+
+  // Check if the button is visible and clickable using data-testid
+  await expect(page.locator('[data-testid="heroButton"]')).toBeVisible();
+  await expect(page.locator('[data-testid="heroButton"]')).toBeEnabled();
+});
+
