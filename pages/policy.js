@@ -1,7 +1,7 @@
 // pages/policy.js
 
 import React from 'react';
-import styles from '../styles/PrivacyPolicy.module.css'; // Ensure you have this CSS module
+import styles from '../styles/PrivacyPolicy.module.css';
 
 const PrivacyPolicy = () => {
   return (
@@ -9,13 +9,13 @@ const PrivacyPolicy = () => {
       <h1>Privacy Policy for Blend-brew Tea</h1>
 
       {/* Introduction Section */}
-      <section>
+      <section data-testid="privacy-introduction">
         <h2>Introduction</h2>
         <p>Welcome to Blend-brew Tea's privacy policy. Your privacy is important to us. This policy outlines the types of personal information we collect, how we use it, and the measures we take to protect it.</p>
       </section>
 
       {/* Information Collection Section */}
-      <section>
+      <section data-testid="privacy-info-collection">
         <h2>What Information We Collect</h2>
         <ul>
           <li><strong>Personal Identification Information</strong>: This may include your name, email address, phone number, and shipping address, which we collect when you register on our site, place an order, subscribe to our newsletter, or fill out a form.</li>
@@ -24,7 +24,7 @@ const PrivacyPolicy = () => {
       </section>
 
       {/* Information Usage Section */}
-      <section>
+      <section data-testid="privacy-info-usage">
         <h2>How We Use Collected Information</h2>
         <p>Blend-brew Tea may collect and use users' personal information for the following purposes:</p>
         <ul>
@@ -34,25 +34,25 @@ const PrivacyPolicy = () => {
       </section>
 
       {/* Information Protection Section */}
-      <section>
+      <section data-testid="privacy-info-protection">
         <h2>How We Protect Your Information</h2>
         <p>We adopt appropriate data collection, storage, and processing practices and security measures to protect against unauthorized access, alteration, disclosure, or destruction of your personal information, username, password, transaction information, and data stored on our site.</p>
       </section>
 
       {/* Information Sharing Section */}
-      <section>
+      <section data-testid="privacy-info-sharing">
         <h2>Sharing Your Personal Information</h2>
         <p>We do not sell, trade, or rent users' personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners, trusted affiliates, and advertisers for the purposes outlined above.</p>
       </section>
 
       {/* Policy Changes Section */}
-      <section>
+      <section data-testid="privacy-policy-changes">
         <h2>Changes to This Privacy Policy</h2>
         <p>Blend-brew Tea has the discretion to update this privacy policy at any time. When we do, we will revise the updated date at the bottom of this page. We encourage users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect.</p>
       </section>
 
       {/* Acceptance of Terms Section */}
-      <section>
+      <section data-testid="privacy-acceptance">
         <h2>Your Acceptance of These Terms</h2>
         <p>By using this site, you signify your acceptance of this policy. If you do not agree with this policy, please do not use our website. Your continued use of the site following the posting of changes to this policy will be deemed as your acceptance of those changes.</p>
       </section>

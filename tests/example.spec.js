@@ -105,3 +105,13 @@ test('Subscribe button and description are present in the SignUpSection', async 
   await expect(subscribeButton).toBeVisible();
   await expect(subscribeButton).toHaveText('Subscribe');
 });
+
+
+test('Privacy policy page displays the correct content', async ({ page }) => {
+  await page.goto('http://localhost:3000/policy');
+
+  // Check for the presence of various sections in the privacy policy using data-testid
+  await expect(page.locator('data-testid=privacy-introduction')).toBeVisible();
+  await expect(page.locator('data-testid=privacy-info-collection')).toBeVisible();
+  // Add more checks for other sections using their respective data-testid attributes
+});
