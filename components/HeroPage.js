@@ -1,6 +1,5 @@
 // components/HeroPage.js
 import React from 'react';
-import { Button } from '@nextui-org/react';
 import styles from '../styles/Home.module.css';
 
 const HeroPage = () => {
@@ -11,11 +10,9 @@ const HeroPage = () => {
           Where Flavor Meets Tranquility
         </h1>
         <p className={styles.heroSubtitle} data-testid="heroSubtitle">
-        Sign up for 10% off your next cup
+          Sign up for 10% off your next cup
         </p>
-        <Button auto ghost className={styles.heroButton} data-testid="heroButton">
-          Shop Now
-        </Button>
+        {/* Button removed from here */}
       </div>
     </div>
   );

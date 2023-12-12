@@ -20,7 +20,7 @@
 /* styles/home.module.css */
 .heroContent {
     background-color: rgba(166, 139, 124, 0.7); 
-    padding: 20px; /* Adjust padding */
+    padding: 60px; /* Adjust padding */
     width: auto; /* Let the content define the width */
     max-width: 600px; /* Set a maximum width */
     text-align: center; /* Center text */
@@ -38,6 +38,7 @@
 .heroSubtitle {
     margin: 0 0 20px 0; /* Adjust bottom margin for spacing */
     font-weight: 600; /* Semi-bold font weight */
+    font-size: 1.3em;
     font-family: 'Open Sans', sans-serif;
 }
 
