@@ -15,8 +15,16 @@ test('Home page has correct SEO description', async ({ page }) => {
 test('Footer section has correct content', async ({ page }) => {
   await page.goto('http://localhost:3000');
 
-  // Check for specific text in the footer
+  // Check for the "About Blend-brew Tea" section
   await expect(page.locator('footer #footer')).toContainText('About Blend-brew Tea');
+  await expect(page.locator('footer #footer')).toContainText('Discover the art of fine tea with Blend-brew Tea.');
+
+  // Check for the "FAQ" section
   await expect(page.locator('footer #footer')).toContainText('FAQ');
+  await expect(page.locator('footer #footer')).toContainText('Ordering & Shipping');
+  await expect(page.locator('footer #footer')).toContainText('Returns and Exchanges');
+  await expect(page.locator('footer #footer')).toContainText('Payment Options');
+
+  // Check for the "Contact Us" section
   await expect(page.locator('footer #footer')).toContainText('Contact Us');
 });
