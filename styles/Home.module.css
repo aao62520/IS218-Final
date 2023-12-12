@@ -159,7 +159,8 @@
 .heroTitle {
     @media (max-width: 768px) {
         /* Adjust font size and other styles for mobile */
-        font-size: 1.3em; /* Example: Adjust font size for mobile */
+        font-size: 1.3em;
+        font-weight: 700; /* Semi-bold font weight */ /* Example: Adjust font size for mobile */
         /* Additional styling adjustments as needed */
     }
 }
