@@ -6,7 +6,7 @@ import SignUpSection from '../components/SignUpSection';
 import Footer from '../components/Footer';
 import styles from '../styles/Home.module.css';
 
-// Dynamically import the ProductCard component
+// Dynamically import the ProductCard component with server-side rendering disabled
 const DynamicProductCard = dynamic(() => import('../components/ProductCard'), {
   loading: () => <p>Loading...</p>,
   ssr: false
@@ -43,7 +43,7 @@ const Index = ({ products }) => {
         ))}
       </div>
       <div className={styles.testimonialSection}>
-        <p className={styles.testimonialText}>
+        <p data-testid="testimonialText" className={styles.testimonialText}>
           "Blendbrew's tea is a delightful blend of quality and flavor! Each sip feels like a journey through the finest tea leaves, offering a rich and aromatic experience that soothes the senses."
         </p>
         <p className={styles.testimonialAuthor}>- Nathan Peterman</p>
