@@ -12,10 +12,17 @@ test('Home page has correct SEO description', async ({ page }) => {
   expect(description).toBe("Discover the art of fine tea with Blend-brew Tea. Explore our crafted blends for a symphony of flavors.");
 });
 
-test('Footer section has correct content', async ({ page }) => {
+test('Navigation bar works correctly', async ({ page }) => {
   await page.goto('http://localhost:3000');
 
-  // Check for specific text in the footer
-  await expect(page.locator('footer #footer')).toContainText('FAQ');
-  await expect(page.locator('footer #footer')).toContainText('Contact Us');
+  // Check navigation links
+  await expect(page.locator('nav >> text=Home')).toBeVisible();
+  await expect(page.locator('nav >> text=About Us')).toBeVisible();
+  await expect(page.locator('nav >> text=Sign Up')).toBeVisible();
+
+  // Test clicking a navigation link
+  await page.click('nav >> text=About Us');
+  // Add assertions to verify the navigation action
 });
+
+
