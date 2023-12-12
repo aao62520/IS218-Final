@@ -128,3 +128,16 @@ test('Cookie consent banner is functional', async ({ page }) => {
   
 });
 
+test('Responsive design adjustments', async ({ page }) => {
+  await page.goto('http://localhost:3000');
+
+  // Check layout at different screen sizes
+  await page.setViewportSize({ width: 1200, height: 800 });
+  // Add checks for layout at this size
+
+  await page.setViewportSize({ width: 768, height: 1024 });
+  // Add checks for layout at this size
+
+  await page.setViewportSize({ width: 480, height: 640 });
+  // Add checks for layout at this size
+});
