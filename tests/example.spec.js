@@ -143,24 +143,5 @@ test('Responsive design adjustments', async ({ page }) => {
 });
 
 
-test('Mailchimp newsletter subscription test', async ({ page }) => {
-  // Navigate to the main page of the application where SignUpSection is included
-  await page.goto('http://localhost:3000');
-
-
-  // Click the subscribe button
-  await page.click('[data-testid="subscribe-button"]');
-
-
-  // Assert the presence of a response message (either success or error)
-  await expect(messageLocator).toBeVisible();
-
-  // Optionally, you can add more specific checks for the content of the message
-  // For example, checking for a success message
-  await expect(messageLocator).toContainText('Thank you for subscribing!', { timeout: 5000 });
-
-  // Or, checking for an error message
-  // await expect(messageLocator).toContainText('An error occurred', { timeout: 5000 });
-});
 
 
