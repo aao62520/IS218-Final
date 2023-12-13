@@ -45,7 +45,6 @@ const PrivacyPolicy = () => {
         <p>We do not sell, trade, or rent users' personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners, trusted affiliates, and advertisers for the purposes outlined above.</p>
       </section>
 
-      // Google Analytics Section
 <section data-testid="privacy-google-analytics">
   <h2>Use of Google Analytics</h2>
   <p>
@@ -79,7 +78,7 @@ const PrivacyPolicy = () => {
   </p>
 </section>
 
-// GDPR Compliance Section
+
 <section data-testid="privacy-gdpr-compliance">
   <h2>GDPR Compliance</h2>
   <p>
