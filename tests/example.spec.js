@@ -141,7 +141,3 @@ test('Responsive design adjustments', async ({ page }) => {
   await page.setViewportSize({ width: 480, height: 640 });
   // Add checks for layout at this size
 });
-
-
-
-
