@@ -5,15 +5,10 @@ import Head from 'next/head';
 import Script from 'next/script';
 import NavigationBar from '../components/NavigationBar';
 import CookieConsent from 'react-cookie-consent';
-import ReactGA from 'react-ga';
 import { Link } from '@nextui-org/react'; // Import Link from @nextui-org/react
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    // Initialize Google Analytics
-    ReactGA.initialize('G-XDWMNHNFNE'); // Replace with your Google Analytics tracking ID
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
+  
 
   return (
     <>
