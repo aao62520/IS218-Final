@@ -5,10 +5,15 @@ import Head from 'next/head';
 import Script from 'next/script';
 import NavigationBar from '../components/NavigationBar';
 import CookieConsent from 'react-cookie-consent';
+import ReactGA from 'react-ga';
 import { Link } from '@nextui-org/react'; // Import Link from @nextui-org/react
 
 function MyApp({ Component, pageProps }) {
-  
+  useEffect(() => {
+    // Initialize Google Analytics
+    ReactGA.initialize('G-XDWMNHNFNE'); // Replace with your Google Analytics tracking ID
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
     <>
@@ -22,6 +27,24 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:type" content="website" />
         <link rel="icon" href="/teas.webp" />
       </Head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-XDWMNHNFNE"
+        strategy="afterInteractive"
+        async
+        data-testid="google-analytics-script"
+      ></Script>
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        data-testid="google-analytics-inline-script"
+      >
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XDWMNHNFNE');
+        `}
+      </Script>
       <NavigationBar />
       <Component {...pageProps} />
       <CookieConsent
