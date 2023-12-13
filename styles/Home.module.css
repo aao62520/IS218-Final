@@ -1,7 +1,7 @@
 /* styles/home.module.css */
 /* Adjusted hero section */
 .hero {
-    background-image: url('/teas.webp');
+    background-image: url('/happy1.webp');
     background-size: cover; /* This will cover the entire area of the div */
     background-position: center center; /* Centers the image */
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@
 /* styles/home.module.css */
 .heroContent {
     background-color: rgba(166, 139, 124, 0.7); 
-    padding: 20px; /* Adjust padding */
+    padding: 60px; /* Adjust padding */
     width: auto; /* Let the content define the width */
     max-width: 600px; /* Set a maximum width */
     text-align: center; /* Center text */
@@ -38,6 +38,7 @@
 .heroSubtitle {
     margin: 0 0 20px 0; /* Adjust bottom margin for spacing */
     font-weight: 600; /* Semi-bold font weight */
+    font-size: 1.3em;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -117,3 +118,74 @@
   }
   
   
+
+.hero {
+    /* ... other styles ... */
+    /* Adjust for mobile devices */
+    @media (max-width: 768px) {
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+        padding: 10px; /* Adjust padding as needed */
+    }
+}
+
+.hero {
+    /* ... other styles ... */
+    /* Adjust for mobile devices */
+    @media (max-width: 768px) {
+        justify-content: flex-start; /* Align content to the start (left side) */
+        align-items: flex-start; /* Align content to the top */
+        padding-top: 20px; /* Add padding at the top */
+        padding-left: 20px; /* Add padding on the left */
+    }
+}
+
+.heroContent {
+    /* ... other styles ... */
+    /* Adjust for mobile devices */
+    @media (max-width: 768px) {
+        position: absolute; /* Position it absolutely within the hero */
+        top: 10; /* Align to the top */
+        left: 10; /* Align to the left */
+        transform: none; /* Remove any transforms */
+        margin: 0; /* Reset margin */
+        width: auto; /* Auto width based on content */
+        max-width: none; /* Remove max-width restriction */
+        padding: 10px; /* Adjust padding for mobile */
+    }
+}
+
+/* Adjusting hero title and subtitle for mobile */
+.heroTitle {
+    @media (max-width: 768px) {
+        /* Adjust font size and other styles for mobile */
+        font-size: 1.3em;
+        font-weight: 700; /* Semi-bold font weight */ /* Example: Adjust font size for mobile */
+        /* Additional styling adjustments as needed */
+    }
+}
+
+.heroSubtitle {
+    @media (max-width: 768px) {
+        /* Adjust font size and other styles for mobile */
+        font-size: 1.0em; /* Example: Adjust font size for mobile */
+        /* Additional styling adjustments as needed */
+    }
+}
+
+.heroTitle {
+    @media (max-width: 480px) {
+        /* Adjust font size and other styles for mobile */
+        font-size: 1.3em;
+        font-weight: 700; /* Semi-bold font weight */ /* Example: Adjust font size for mobile */
+        /* Additional styling adjustments as needed */
+    }
+}
+
+.heroSubtitle {
+    @media (max-width: 480px) {
+        /* Adjust font size and other styles for mobile */
+        font-size: 1.0em; /* Example: Adjust font size for mobile */
+        /* Additional styling adjustments as needed */
+    }
+}

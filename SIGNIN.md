@@ -5,23 +5,23 @@ Each student should put an 'X' under their name on the days they attend class.
 
 ### November 2023
 
-| Date        | Student 1 | Mike Villagomez | Student 3 |
-|-------------|-----------|-----------|-----------|
-| Nov 8 (Wed) |    Ahmad  |     X     |           |
-| Nov 10 (Fri)|   Ahmad        |     X     |           |
-| Nov 15 (Wed)|     Ahmad      |      X     |           |
-| Nov 17 (Fri)|   Ahmad        |      X     |           |
-| *Nov 22 (Wed)* | Ahmad      |     X      |           |  <!-- Skipped for Thanksgiving -->
-| *Nov 24 (Fri)* |       |      X     |           |  <!-- Skipped for Thanksgiving -->
+| Date        | Ahmad A | Mike Villagomez | 
+|-------------|-----------|-----------|
+| Nov 8 (Wed) |    Ahmad  |     Mike     |      
+| Nov 10 (Fri)|   Ahmad        |     Mike     |
+| Nov 15 (Wed)|     Ahmad      |      Mike     |         
+| Nov 17 (Fri)|   Ahmad        |      Mike     |         
+| *Nov 22 (Wed)* | Ahmad      |     Mike      |            <!-- Skipped for Thanksgiving -->
+| *Nov 24 (Fri)* |    Ahmad    |      Mike     |            <!-- Skipped for Thanksgiving -->
 
 ### December 2023
 
-| Date        | Student 1 | Mike Villagomez  | Student 3 |
-|-------------|-----------|-----------|-----------|
-| Nov 29 (Wed)|           |     X      |           |
-| Dec 1 (Fri) |           |    X       |           |
-| Dec 6 (Wed) |           |    X       |           |
-| Dec 8 (Fri) |           |    X       |           |
-| Dec 13 (Wed)|           |           |           |
+| Date        | Student 1 | Mike Villagomez  | 
+|-------------|-----------|-----------|
+| Nov 29 (Wed)|     Ahmad       |     Mike      |          
+| Dec 1 (Fri) |     Ahmad       |    Mike       |         
+| Dec 6 (Wed) |     Ahmad       |    Mike       |          
+| Dec 8 (Fri) |      Ahmad      |    Mike       |          
+| Dec 13 (Wed)|      Ahmad      |      Mike     |         
 
 *Instructions: Please place an 'X' in the cell under your name corresponding to the dates you attend class.*

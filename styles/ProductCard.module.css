@@ -36,7 +36,7 @@
     text-align: center;
     color: black;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Adjusted margin */
     padding: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -53,38 +53,34 @@
 }
 
 .cardDescription {
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     margin-top: 4px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
 }
 
-.cardNumber {
+.cardCalories { /* New class for displaying calories */
     font-size: 1.2rem;
     color: black;
     margin: 10px 0;
+    font-weight: bold; /* Optional: for emphasizing the calorie information */
     font-family: 'Open Sans', sans-serif;
 }
 
-.cardButton {
-    background-color: #D9D9D9;
-    color: black;
-    font-size: 1.2rem;
-    padding: 15px 30px;
-    border-radius: 20px;
-    border: none;
-    width: auto;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 20px;
+
+/* Adjust the line clamp for the description on smaller screens */
+@media (max-width: 768px) {
+    .cardContent {
+        -webkit-line-clamp: 9; /* Show more lines on smaller screens */
+    }
 }
 
-.cardButton:hover {
-    background-color: #b0b0b0;
+/* Additional responsive adjustments for the card */
+@media (max-width: 480px) {
+    .card {
+        min-height: 420px; /* Further increase for very small screens */
+    }
+
+    .cardBody {
+        margin-bottom: 20px; /* Add some space at the bottom */
+    }
 }
-
-

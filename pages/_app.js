@@ -1,5 +1,4 @@
 // pages/_app.js
-
 import React, { useEffect } from 'react';
 import '../styles/globals.css';
 import Head from 'next/head';
@@ -24,18 +23,20 @@ function MyApp({ Component, pageProps }) {
         <meta name="keywords" content="tea, blendbrew tea, organic tea, herbal tea, green tea, black tea, loose leaf tea, tea blends, specialty tea, artisan tea" />
         <meta property="og:title" content="Blend-brew Tea" />
         <meta property="og:description" content="Explore our crafted blends for a symphony of flavors." />
-        <meta property="og:image" content="/teas.webp" /> {/* Replace with your image path */}
+        <meta property="og:image" content="/happy1.jpg" />
         <meta property="og:type" content="website" />
-        <link rel="icon" href="/teas.webp" /> {/* Replace with your favicon path */}
+        <link rel="icon" href="/teas.webp" />
       </Head>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-XDWMNHNFNE"
         strategy="afterInteractive"
         async
+        data-testid="google-analytics-script"
       ></Script>
       <Script
         id="google-analytics"
         strategy="afterInteractive"
+        data-testid="google-analytics-inline-script"
       >
         {`
           window.dataLayer = window.dataLayer || [];
@@ -53,6 +54,7 @@ function MyApp({ Component, pageProps }) {
         style={{ background: "#2B373B", fontSize: "16px" }}
         buttonStyle={{ color: "#4e503b", fontSize: "16px" }}
         expires={150}
+        data-testid="cookie-consent-banner" // Added data-testid attribute for testing
       >
         This website uses cookies to improve your experience. By using our website, you agree to our 
         <Link href="/policy" style={{ color: "#F1D00A" }}>Privacy Policy</Link>. 
