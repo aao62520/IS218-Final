@@ -1,6 +1,6 @@
 # Link to Vercel
 
--Link to Vercel Project [Here]([https://github.com/MikeVillagomez/IS218-Final/blob/main/SIGNIN.md](https://is-218-final-beta.vercel.app/))
+-Link to Vercel Project [Here](https://is-218-final-beta.vercel.app/)
 
 # Final Business Analysis Submission Link
 
