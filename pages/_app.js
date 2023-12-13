@@ -27,24 +27,6 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:type" content="website" />
         <link rel="icon" href="/teas.webp" />
       </Head>
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-XDWMNHNFNE"
-        strategy="afterInteractive"
-        async
-        data-testid="google-analytics-script"
-      ></Script>
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
-        data-testid="google-analytics-inline-script"
-      >
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-XDWMNHNFNE');
-        `}
-      </Script>
       <NavigationBar />
       <Component {...pageProps} />
       <CookieConsent

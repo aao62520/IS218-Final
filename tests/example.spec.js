@@ -143,5 +143,23 @@ test('Responsive design adjustments', async ({ page }) => {
 });
 
 
+test('Subscription via Mailchimp works correctly', async ({ page }) => {
+  // Go to the home page
+  await page.goto('http://localhost:3000');
 
+  // Set the viewport size
+  await page.setViewportSize({width: 1200, height: 800});
 
+  // Fill the email input field with a test email
+  await page.fill('[data-testid="email-input"]', 'test@example.com');
+
+  // Click the subscribe button, force the click if needed
+  await page.click('[data-testid="subscribe-button"]', { force: true });
+
+  // Wait for the subscription message to be displayed
+  await page.waitForSelector('[data-testid="subscription-message"]', { state: 'visible' });
+
+  // Verify that the subscription message is displayed and contains the expected text
+  const messageText = await page.textContent('[data-testid="subscription-message"]');
+  expect(messageText).toContain('Thank you for subscribing!');
+});
