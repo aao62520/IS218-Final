@@ -229,10 +229,6 @@
 
 /* Further adjustments for very small devices (phones) */
 @media (max-width: 480px) {
-    .hero {
-        /* Same as above or additional adjustments as needed */
-    }
-
     .heroContent {
         top: 50px; /* Slightly less offset from the top */
         left: 0px; /* Slightly less offset from the left */
