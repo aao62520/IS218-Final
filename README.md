@@ -29,10 +29,6 @@
 -Link[Here]([put link here)
 
 
-# Teamwork and Collaboration: 
--Link[Here](put link here)
-
-
 
 # Quality Assurance Process: 
 
