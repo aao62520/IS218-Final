@@ -26,18 +26,16 @@
 
 
 # Usability Testing Process 
--
+-Link[Here]([put link here)
 
 
 # Teamwork and Collaboration: 
+-Link[Here](put link here)
 
-
-# Quality Assurance Process: 
-
--Link[Here](https://is-218-final-beta.vercel.app/)
-
-
-# Technical Implementation: 
 
 
 # Quality Assurance Process: 
+
+-Link[Here]([https://is-218-final-beta.vercel.app/](https://github.com/MikeVillagomez/IS218-Final/blob/main/Quality-Assurance-Process.md)https://github.com/MikeVillagomez/IS218-Final/blob/main/Quality-Assurance-Process.md)
+
+
