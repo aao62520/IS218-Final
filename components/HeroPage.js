@@ -10,9 +10,11 @@ const HeroPage = () => {
           Where Flavor Meets Tranquility
         </h1>
         <p className={styles.heroSubtitle} data-testid="heroSubtitle">
-          Sign up for 10% off your next cup
+        Discover the perfect blend for the holiday season with BlendBrew Tea Co. Customize your own tea creations and send them directly to your loved ones with our expedited shipping options. Order by Dec. 19th to ensure your personalized tea gifts arrive in time for Christmas. Conditions apply.
         </p>
-        {/* Button removed from here */}
+        <a href="#SignUpSection" className={styles.heroButton}>
+          Sign Up &amp; Save 10%
+        </a> {/* CTA button added */}
       </div>
     </div>
   );

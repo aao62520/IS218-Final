@@ -23,3 +23,19 @@
 # Detailed User Stories, UX Design and Technology Research
 
 -Link to the task-level user stories and acceptance that provide the specific action or information needed for each epic [Here](https://github.com/MikeVillagomez/IS218-Final/blob/main/Task-level-user-stories.md)
+
+
+# Usability Testing Process 
+-Link[Here]([put link here)
+
+
+# Teamwork and Collaboration: 
+-Link[Here](put link here)
+
+
+
+# Quality Assurance Process: 
+
+-Link [Here](https://is-218-final-beta.vercel.app/](https://github.com/MikeVillagomez/IS218-Final/blob/main/Quality-Assurance-Process.md)https://github.com/MikeVillagomez/IS218-Final/blob/main/Quality-Assurance-Process.md)
+
+

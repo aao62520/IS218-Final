@@ -90,7 +90,7 @@ test('Hero section displays correct content and button', async ({ page }) => {
 
   // Check for hero title and subtitle using data-testid
   await expect(page.locator('[data-testid="heroTitle"]')).toContainText('Where Flavor Meets Tranquility');
-  await expect(page.locator('[data-testid="heroSubtitle"]')).toContainText('Sign up for 10% off your next cup');
+  await expect(page.locator('[data-testid="heroSubtitle"]')).toContainText('Discover the perfect blend for the holiday season with BlendBrew Tea Co. Customize your own tea creations and send them directly to your loved ones with our expedited shipping options. Order by Dec. 19th to ensure your personalized tea gifts arrive in time for Christmas. Conditions apply.');
 });
 
 test('Subscribe button and description are present in the SignUpSection', async ({ page }) => {
@@ -140,4 +140,18 @@ test('Responsive design adjustments', async ({ page }) => {
 
   await page.setViewportSize({ width: 480, height: 640 });
   // Add checks for layout at this size
+});
+
+test.describe('Subscribe Button Functionality Tests', () => {
+    test('The Subscribe button is clickable', async ({ page }) => {
+        // Go to your site's home page
+        await page.goto('http://localhost:3000');
+
+        // Locate the email input field and type a test email address
+        const emailInput = page.locator('[data-testid="email-input"]');
+        await emailInput.type('mikev2002v@icloud.com');
+
+        // Locate the Subscribe button
+        const subscribeButton = page.locator('[data-testid="subscribe-button"]');
+    });
 });

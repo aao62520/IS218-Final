@@ -27,7 +27,7 @@
     border-radius: 10px;
     position: absolute; /* Position it absolutely within the hero which is relative */
     top: 30px; /* Position from the top */
-    left: 30px; /* Position from the left */
+    left: 15px; /* Position from the left */
     transform: none; /* Remove centering transform */
 }
 
@@ -185,7 +185,53 @@
 .heroSubtitle {
     @media (max-width: 480px) {
         /* Adjust font size and other styles for mobile */
-        font-size: 1.0em; /* Example: Adjust font size for mobile */
+        font-size: 0.9em; /* Example: Adjust font size for mobile */
         /* Additional styling adjustments as needed */
+    }
+}
+
+@media (max-width: 768px) {
+    .heroButton {
+        padding: 10px 20px; /* Smaller padding */
+        font-size: 1rem; /* Smaller font size */
+        /* Additional adjustments as needed */
+    }
+}
+
+/* Adjust heroButton size for small devices (phones) */
+@media (max-width: 480px) {
+    .heroButton {
+        padding: 8px 15px; /* Even smaller padding for very small devices */
+        font-size: 0.9rem; /* Slightly smaller font size */
+        /* Additional adjustments as needed */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        justify-content: flex-start; /* Align content to the start (left side) */
+        align-items: flex-start; /* Align content to the top */
+        padding-top: 20px; /* Add padding at the top */
+        padding-left: 20px; /* Add padding on the left */
+    }
+
+    .heroContent {
+        position: absolute; /* Position it absolutely within the hero */
+        top: 20px; /* Position from the top */
+        left: 20px; /* Position from the left */
+        transform: none; /* Remove any transforms */
+        width: auto; /* Auto width based on content */
+        max-width: none; /* Remove max-width restriction */
+        padding: 10px; /* Adjust padding for mobile */
+    }
+}
+
+/* Further adjustments for very small devices (phones) */
+@media (max-width: 480px) {
+    .heroContent {
+        top: 10px; /* Slightly less offset from the top */
+        left: 0px; /* Slightly less offset from the left */
+        /* Further adjustments as needed */
     }
 }

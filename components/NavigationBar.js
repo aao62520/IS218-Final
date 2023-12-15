@@ -1,6 +1,7 @@
 // components/NavigationBar.js
 import React from 'react';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 import styles from '../styles/NavigationBar.module.css';
 import { Navbar, Link } from '@nextui-org/react';
 
@@ -19,7 +20,15 @@ const NavigationBar = () => {
 
   return (
     <Navbar className={styles.navbar}>
-      <span className={styles.brand}>Blend-brew Tea</span>
+      <div className={styles.logoContainer}>
+        <Image
+          src="/Brew.png" // Replace with the actual path to your logo
+          alt="BlendBrew Tea Co. Logo"
+          width={50} // Adjust the size as needed
+          height={46}
+          style={{ objectFit: 'contain' }} // Apply objectFit using style prop
+        />
+      </div>
       <nav>
         <ul className={styles.menu}>
           <li>
@@ -38,3 +47,4 @@ const NavigationBar = () => {
 };
 
 export default NavigationBar;
+

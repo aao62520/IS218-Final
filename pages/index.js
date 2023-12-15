@@ -1,3 +1,5 @@
+// pages/index.js
+
 import React from 'react';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
@@ -26,6 +28,7 @@ const Index = ({ products }) => {
         <link rel="icon" href="/happy.png" />
       </Head>
       <HeroPage />
+      <SignUpSection /> {/* SignUpSection moved here, right after HeroPage */}
       <div className={styles.popularFlavorText}>
         OUR MOST POPULAR
         <br />
@@ -48,7 +51,6 @@ const Index = ({ products }) => {
         </p>
         <p className={styles.testimonialAuthor}>- Nathan Peterman</p>
       </div>
-      <SignUpSection />
       <Footer />
     </>
   );
