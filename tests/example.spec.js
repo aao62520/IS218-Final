@@ -141,3 +141,17 @@ test('Responsive design adjustments', async ({ page }) => {
   await page.setViewportSize({ width: 480, height: 640 });
   // Add checks for layout at this size
 });
+
+test.describe('Subscribe Button Functionality Tests', () => {
+    test('The Subscribe button is clickable', async ({ page }) => {
+        // Go to your site's home page
+        await page.goto('http://localhost:3000');
+
+        // Locate the email input field and type a test email address
+        const emailInput = page.locator('[data-testid="email-input"]');
+        await emailInput.type('mikev2002v@icloud.com');
+
+        // Locate the Subscribe button
+        const subscribeButton = page.locator('[data-testid="subscribe-button"]');
+    });
+});
