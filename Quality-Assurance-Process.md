@@ -39,6 +39,9 @@ Manual testing involves visiting the website and manually interacting with its e
 
 Lighthouse testing assesses the website's performance, accessibility, best practices, and SEO. The target is to achieve scores above 90 in all areas except PWA.
 
+![Lighthouse Test Results for desktop](imageslighthouse_desktop.png)
+![Lighthouse Test Results for mobile](images/lighthouse_mobile.png);
+
 ## Continuous Improvement
 
 - Regularly update the automated tests to cover new features or updates.
