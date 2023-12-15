@@ -27,7 +27,7 @@
     border-radius: 10px;
     position: absolute; /* Position it absolutely within the hero which is relative */
     top: 30px; /* Position from the top */
-    left: 30px; /* Position from the left */
+    left: 15px; /* Position from the left */
     transform: none; /* Remove centering transform */
 }
 
