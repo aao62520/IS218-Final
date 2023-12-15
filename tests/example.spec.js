@@ -90,7 +90,7 @@ test('Hero section displays correct content and button', async ({ page }) => {
 
   // Check for hero title and subtitle using data-testid
   await expect(page.locator('[data-testid="heroTitle"]')).toContainText('Where Flavor Meets Tranquility');
-  await expect(page.locator('[data-testid="heroSubtitle"]')).toContainText('Sign up for 10% off your next cup');
+  await expect(page.locator('[data-testid="heroSubtitle"]')).toContainText('Discover the perfect blend for the holiday season with BlendBrew Tea Co. Customize your own tea creations and send them directly to your loved ones with our expedited shipping options. Order by Dec. 19th to ensure your personalized tea gifts arrive in time for Christmas. Conditions apply.');
 });
 
 test('Subscribe button and description are present in the SignUpSection', async ({ page }) => {
