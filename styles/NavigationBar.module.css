@@ -3,7 +3,7 @@
     background-color: #A68B7C;
     display: flex;
     align-items: center;
-    padding: 1rem;
+    padding: 0rem;
     position: relative; /* Establishes the containing block for absolute positioning */
     font-family: 'Open Sans', sans-serif;
   }
@@ -29,9 +29,19 @@
     color: black;
     padding: 0 1rem; /* Space between menu items */
     text-decoration: none;
+    font-size: 1.2em;
   }
   
   .menuItem:hover {
     text-decoration: underline;
+  }
+  
+  .logoContainer {
+    height: 50px; 
+    width: 80px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px; 
   }
   

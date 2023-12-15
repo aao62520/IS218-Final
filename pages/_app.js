@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:description" content="Explore our crafted blends for a symphony of flavors." />
         <meta property="og:image" content="/happy1.jpg" />
         <meta property="og:type" content="website" />
-        <link rel="icon" href="/teas.webp" />
+        <link rel="icon" href="/Brew.png" />
       </Head>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-XDWMNHNFNE"
