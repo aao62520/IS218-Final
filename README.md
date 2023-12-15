@@ -36,6 +36,6 @@
 
 # Quality Assurance Process: 
 
--Link[Here]([https://is-218-final-beta.vercel.app/](https://github.com/MikeVillagomez/IS218-Final/blob/main/Quality-Assurance-Process.md)https://github.com/MikeVillagomez/IS218-Final/blob/main/Quality-Assurance-Process.md)
+-Link [Here](https://is-218-final-beta.vercel.app/](https://github.com/MikeVillagomez/IS218-Final/blob/main/Quality-Assurance-Process.md)https://github.com/MikeVillagomez/IS218-Final/blob/main/Quality-Assurance-Process.md)
 
 
