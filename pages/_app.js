@@ -6,12 +6,12 @@ import Script from 'next/script';
 import NavigationBar from '../components/NavigationBar';
 import CookieConsent from 'react-cookie-consent';
 import ReactGA from 'react-ga';
-import { Link } from '@nextui-org/react'; // Import Link from @nextui-org/react
+import { Link } from '@nextui-org/react';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     // Initialize Google Analytics
-    ReactGA.initialize('G-XDWMNHNFNE'); // Replace with your Google Analytics tracking ID
+    ReactGA.initialize('G-XDWMNHNFNE');
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
@@ -49,16 +49,25 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <CookieConsent
         location="bottom"
-        buttonText="I understand"
-        cookieName="blendbrewTeaCookieConsent"
-        style={{ background: "#2B373B", fontSize: "16px" }}
-        buttonStyle={{ color: "#4e503b", fontSize: "16px" }}
+        buttonText="Accept"
+        cookieName="cookieName"
+        enableDeclineButton
+        declineButtonText="Decline"
+        declineCookieValue={false}
+        style={{ background: "#2B373B" }}  // Changed color as requested
+        buttonStyle={{ background:"#007BFF", color: "white", fontSize:"50px"}} // Adjusted for better visibility and contrast
+        declineButtonStyle={{ background:"#cfcfcf", color: "black", fontSize: "50px"}}
         expires={150}
-        data-testid="cookie-consent-banner" // Added data-testid attribute for testing
       >
         This website uses cookies to improve your experience. By using our website, you agree to our 
-        <Link href="/policy" style={{ color: "#F1D00A" }}>Privacy Policy</Link>. 
+        <Link href="/policy" style={{ color: "#F1D00A" }}>Privacy Policy</Link>.
       </CookieConsent>
+    </>
+  );
+}
+
+export default MyApp;
+
     </>
   );
 }
