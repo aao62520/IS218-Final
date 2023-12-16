@@ -1,6 +1,8 @@
-# Link to Vercel
+# Link to Vercel and Figma Main
 
 -Link to Vercel Project [Here](https://is-218-final-beta.vercel.app/)
+
+-Link to Figma design 1 [Here](https://www.figma.com/file/C4rDJpr1dSmhsEmYPrFntX/design-1-(Copy)?type=design&node-id=0-1&mode=design&t=wHVgAWJDciTYN6rp-0)
 
 # Final Business Analysis Submission Link
 
@@ -16,7 +18,7 @@
 
 -Link to the User Stories [Here](https://github.com/MikeVillagomez/IS218-Final/blob/main/userstories.md)
 
--Link to figma design 1 [Here](https://www.figma.com/file/C4rDJpr1dSmhsEmYPrFntX/design-1-(Copy)?type=design&node-id=0-1&mode=design&t=wHVgAWJDciTYN6rp-0)
+-Link to Figma design 1 [Here](https://www.figma.com/file/C4rDJpr1dSmhsEmYPrFntX/design-1-(Copy)?type=design&node-id=0-1&mode=design&t=wHVgAWJDciTYN6rp-0)
 
 -Link to figma design 2 [Here](https://www.figma.com/file/lX4OHgOanpyhoJeVHr2btM/design-1?type=design&mode=design&t=u44seko83zk2h2v8-0)
 
@@ -26,7 +28,7 @@
 
 
 # Usability Testing Process 
--Link[Here](https://github.com/MikeVillagomez/IS218-Final/blob/main/markdown.md)
+-Link [Here](https://github.com/MikeVillagomez/IS218-Final/blob/main/markdown.md)
 
 
 
