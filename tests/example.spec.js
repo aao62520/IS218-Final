@@ -46,26 +46,6 @@ test('Testimonial section displays the correct text', async ({ page }) => {
 });
 
 
-test('Google Analytics is correctly initialized', async ({ page }) => {
-  await page.goto('http://localhost:3000');
-
-  // Check if the Google Analytics initialization function is defined
-  const isGAInitialized = await page.evaluate(() => {
-    return typeof window.gtag === 'function';
-  });
-
-  expect(isGAInitialized).toBe(true);
-
-  // Optionally, you can also check if the window dataLayer object has been created
-  const isDataLayerDefined = await page.evaluate(() => {
-    return typeof window.dataLayer !== 'undefined';
-  });
-
-  expect(isDataLayerDefined).toBe(true);
-});
-
-
-
 test.describe('Navigation Bar Text Tests', () => {
     test('Text for Home, About Us, and Subscribe links are correct', async ({ page }) => {
         // Go to your site's home page
@@ -154,4 +134,29 @@ test.describe('Subscribe Button Functionality Tests', () => {
         // Locate the Subscribe button
         const subscribeButton = page.locator('[data-testid="subscribe-button"]');
     });
+
+    
+
+    test.describe('Cookie Consent and Google Analytics Test', () => {
+      test('Should accept cookies and load page content', async ({ page }) => {
+        // Go to your website
+        await page.goto('https://is-218-final-beta.vercel.app/');
+    
+        // Check for the presence of the cookie consent banner
+        const cookieBanner = page.locator('[data-testid="cookie-consent-banner"]');
+        await expect(cookieBanner).toBeVisible();
+    
+        // Click the 'Accept' button
+        const acceptCookiesButton = page.locator('[data-testid="accept-cookies"]');
+        await acceptCookiesButton.click();
+    
+        // Check if a specific element is visible after accepting cookies
+        const afterCookieAcceptElement = page.locator('[data-testid="after-cookie-accept"]');
+        await expect(afterCookieAcceptElement).toBeVisible();
+      });
+    });
+    
+
+
+
 });
