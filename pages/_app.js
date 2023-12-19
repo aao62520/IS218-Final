@@ -39,20 +39,23 @@ function MyApp({ Component, pageProps }) {
   const handleDeclineCookie = () => {
     setCookieConsent(false);
     localStorage.setItem('cookieName', 'false');
-    window['ga-disable-G-XDWMNHNFNE'] = true; // Disable Google Analytics
+    
+    window['ga-disable-G-XDWMNHNFNE'] = true;
+
+    loadGoogleAnalytics();
   };
 
   return (
     <>
       <Head>
-        <title>Blend-brew Tea</title>
+      <title>Blend-brew Tea</title>
         <meta name="description" content="Discover the art of fine tea with Blend-brew Tea. Explore our crafted blends for a symphony of flavors." />
         <meta name="keywords" content="tea, blendbrew tea, organic tea, herbal tea, green tea, black tea, loose leaf tea, tea blends, specialty tea, artisan tea" />
         <meta property="og:title" content="Blend-brew Tea" />
         <meta property="og:description" content="Explore our crafted blends for a symphony of flavors." />
         <meta property="og:image" content="/happy1.jpg" />
         <meta property="og:type" content="website" />
-        <link rel="icon" href="/Brew.png" />
+        <link rel="icon" href="/Brew.png" />    
       </Head>
       <NavigationBar />
       <Component {...pageProps} />
@@ -70,16 +73,7 @@ function MyApp({ Component, pageProps }) {
         onAccept={handleAcceptCookie}
         onDecline={handleDeclineCookie}
       >
-        This website uses cookies to improve your experience.
-        <div style={{ marginTop: '10px' }}>
-          <button onClick={handleAcceptCookie} data-testid="accept-cookies">
-            Accept
-          </button>
-          <button onClick={handleDeclineCookie} data-testid="decline-cookies">
-            Decline
-          </button>
-        </div>
-        By using our website, you agree to our 
+        This website uses cookies to improve your experience. By using our website, you agree to our 
         <Link href="/policy" style={{ color: "#F1D00A" }}>Privacy Policy</Link>.
       </CookieConsent>
     </>
