@@ -39,7 +39,10 @@ function MyApp({ Component, pageProps }) {
   const handleDeclineCookie = () => {
     setCookieConsent(false);
     localStorage.setItem('cookieName', 'false');
-    // Additional logic if needed to disable analytics when cookies are declined
+    
+    window['ga-disable-G-XDWMNHNFNE'] = true;
+
+    loadGoogleAnalytics();
   };
 
   return (
