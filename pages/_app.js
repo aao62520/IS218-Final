@@ -1,4 +1,3 @@
-//components/_app.js
 import React, { useEffect, useState } from 'react';
 import '../styles/globals.css';
 import Head from 'next/head';
@@ -71,20 +70,18 @@ function MyApp({ Component, pageProps }) {
         onAccept={handleAcceptCookie}
         onDecline={handleDeclineCookie}
       >
-        <div data-testid="cookie-consent-banner">
-    This website uses cookies to improve your experience.
-    <div style={{ marginTop: '10px' }}>
-      <button onClick={handleAcceptCookie} data-testid="accept-cookies">
-        Accept
-      </button>
-      <button onClick={handleDeclineCookie} data-testid="decline-cookies">
-        Decline
-      </button>
-    </div>
-    By using our website, you agree to our 
-    <Link href="/policy" style={{ color: "#F1D00A" }}>Privacy Policy</Link>.
-  </div>
-</CookieConsent>
+        This website uses cookies to improve your experience.
+        <div style={{ marginTop: '10px' }}>
+          <button onClick={handleAcceptCookie} data-testid="accept-cookies">
+            Accept
+          </button>
+          <button onClick={handleDeclineCookie} data-testid="decline-cookies">
+            Decline
+          </button>
+        </div>
+        By using our website, you agree to our 
+        <Link href="/policy" style={{ color: "#F1D00A" }}>Privacy Policy</Link>.
+      </CookieConsent>
     </>
   );
 }
