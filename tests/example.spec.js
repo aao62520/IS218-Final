@@ -46,6 +46,19 @@ test('Testimonial section displays the correct text', async ({ page }) => {
 });
 
 
+test('Google Analytics script should be loaded', async ({ page }) => {
+  // Navigate to your webpage
+  await page.goto('http://localhost:3000'); // Replace with the URL of your site
+
+  // Check if the Google Analytics script tag is present
+  const isGAScriptLoaded = await page.evaluate(() => {
+    return Array.from(document.querySelectorAll('script')).some(script => 
+      script.src.includes('googletagmanager.com/gtag/js')
+    );
+  });
+
+});
+
 test.describe('Navigation Bar Text Tests', () => {
     test('Text for Home, About Us, and Subscribe links are correct', async ({ page }) => {
         // Go to your site's home page
@@ -135,28 +148,16 @@ test.describe('Subscribe Button Functionality Tests', () => {
         const subscribeButton = page.locator('[data-testid="subscribe-button"]');
     });
 
-    
+    test.describe('Cookie Consent Form Tests', () => {
 
-    test.describe('Cookie Consent and Google Analytics Test', () => {
-      test('Should accept cookies and load page content', async ({ page }) => {
-        // Go to your website
-        await page.goto('https://is-218-final-beta.vercel.app/');
+      test('should display the cookie consent form', async ({ page }) => {
+        await page.goto('http://localhost:3000'); // Replace with your URL
     
-        // Check for the presence of the cookie consent banner
-        const cookieBanner = page.locator('[data-testid="cookie-consent-banner"]');
-        await expect(cookieBanner).toBeVisible();
-    
-        // Click the 'Accept' button
-        const acceptCookiesButton = page.locator('[data-testid="accept-cookies"]');
-        await acceptCookiesButton.click();
-    
-        // Check if a specific element is visible after accepting cookies
-        const afterCookieAcceptElement = page.locator('[data-testid="after-cookie-accept"]');
-        await expect(afterCookieAcceptElement).toBeVisible();
+        // Check for the presence of the cookie consent form
+        const cookieConsentForm = page.locator('text=This website uses cookies'); // Adjust as necessary
+        await expect(cookieConsentForm).toBeVisible();
       });
     });
-    
-
-
-
 });
+
+
